@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Cam from '../elements/images/Cam';
 
@@ -8,19 +7,8 @@ import Root from '../elements/Root';
 import Heading from '../elements/Heading';
 import Subheading from '../elements/Subheading';
 import Paragraph from '../elements/Paragraph';
+import Links from '../elements/Links';
 import SkillsTable from '../components/SkillsTable';
-
-const Links = styled(Paragraph)`
-  & > a {
-    display: inline-block;
-    margin-right: 0.5em;
-  }
-
-  @media (max-width: 480px) {
-    text-align: center;
-    margin: 2em 0;
-  }
-`;
 
 const IndexPage = () => (
   <Root>
