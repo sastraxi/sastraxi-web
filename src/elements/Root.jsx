@@ -11,6 +11,7 @@ const Outer = styled.div`
 
 const Inner = styled.div`
   padding: 3em;
+  padding-right: 4.2em;
   background: white;
   box-shadow: ${BOX_SHADOW};
   max-width: 700px;
