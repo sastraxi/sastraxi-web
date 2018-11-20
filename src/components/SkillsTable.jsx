@@ -16,7 +16,10 @@ const SKILLS = {
     'Webpack',
     'Apollo',
   ],
-  backend: ['node.js', 'Babel', 'Apollo Server', 'Java', 'PostgreSQL', 'Redis', 'RabbitMQ'],
+  backend: [
+    'node.js', 'Babel', 'Apollo Server', 'Java', 'PostgreSQL', 'Redis', 'RabbitMQ',
+    'react-virtualized',
+  ],
   product: ['Trello', 'Confluence', 'JIRA', 'draw.io'],
   devops: ['Docker', 'Google Cloud Platform', 'Ansible'],
 };

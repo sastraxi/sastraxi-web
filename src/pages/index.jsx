@@ -27,7 +27,7 @@ const IndexPage = () => (
     <Badge size="160px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>
-      Software architect, mentor, entrepreneur
+      Software architect, entrepreneur, mentor
     </Subheading>
     <Links>
       <a href="mailto:sastraxi+weblinks@gmail.com">Email</a>
@@ -47,7 +47,7 @@ const IndexPage = () => (
       .
     </Paragraph>
     <Paragraph>
-      I love learning, and I love solving problems.&nbsp;
+      I love to learn, and I love solving problems.&nbsp;
       <a href="mailto:sastraxi+webcta@gmail.com">Get in touch</a>
       .
     </Paragraph>
@@ -62,26 +62,36 @@ const IndexPage = () => (
       approaching them from every angle imaginable. Building user stories, performing
       user inteviews, more formal requirements analysis, and expectaton setting
       are all tools I have used to succesfully deliver products within reasonable
-      timeframes and budgets. I believe that there is no&nbsp;
-      <i>one</i>
-      &nbsp;correct approach to
-      building software, but rather that it is context-dependent (in a big way!).
+      timeframes and budgets.
     </Paragraph>
     <Paragraph>
-      My greatest achievements so far have been in watching the students I&apos;ve mentored
-      grow. I live for that moment when their eyes light up and they make a hundred
-      connections at once in their brains about programming and for that brief second
-      it all makes sense. I love that feeling myself, and I love helping others get there.
+      I believe that there is no one
+      correct approach to building software.
     </Paragraph>
     <Paragraph>
-      More concretely, I lead the development of all of&nbsp;
+      I have been mentoring students at&nbsp;
+      <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
+      &nbsp;for a few months now, and it has been deeply satsifying witnessing
+      their journies. Witnessing that moment when their eyes light up
+      and they make a hundred connections at once in their brains about programming and
+      for that brief second it all makes sense. I love that feeling myself,
+      and I love helping others get there.
+    </Paragraph>
+    <Paragraph>
+      More concretely, I am super proud of the work we&apos;ve done at&nbsp;
       <a href="https://robin.live">Robin Media</a>
-      &apos;s initiatives up until September 2018 and lead a 2-year rewrite
-      of the Lyricfind backend systems from 2014-2016.
+      , where I lead the development of our initiatives up until September 2018.
+      I also lead a 2-year rewrite of the&nbsp;
+      <a href="https://lyricfind.com">LyricFind</a>
+      &nbsp;backend systems from 2014-2016.
       I was also (largely) responsible for product and project management on these efforts.
     </Paragraph>
+    <Subheading>
+      Selected technical skills
+    </Subheading>
+    <SkillsTable />
     <Paragraph>
-      See an example of my&nbsp;
+      Here is an example of my&nbsp;
       <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
         technical writing
       </a>
@@ -90,10 +100,6 @@ const IndexPage = () => (
       <a href="https://www.graphile.org/postgraphile/">PostGraphile</a>
       .
     </Paragraph>
-    <Subheading>
-      Selected technical skills
-    </Subheading>
-    <SkillsTable />
     <Paragraph>
       I perform with a band called&nbsp;
       <a href="https://myfavouritefilter.com">

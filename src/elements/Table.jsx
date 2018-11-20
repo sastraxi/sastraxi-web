@@ -5,17 +5,20 @@ import styled from 'styled-components';
 const Table = styled.table`
   text-align: left;
 
-  th {
-    border-right: 1px solid rgba(0, 0, 0, 0.16);
-    padding-right: 1em;
-    margin: 0;
+  th, td {
+    vertical-align: top;    
     padding-bottom: 0.5em;
+    margin: 0;
+  }
+
+  th {
+    padding-right: 1em;
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+    min-width: 7em;
   }
 
   td {
     padding-left: 1em;
-    padding-bottom: 0.5em;
-    margin: 0;
   }
 
   tr:last-child td,
