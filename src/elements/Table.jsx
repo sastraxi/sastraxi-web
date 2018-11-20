@@ -15,6 +15,10 @@ const Table = styled.table`
     padding-right: 1em;
     border-right: 1px solid rgba(0, 0, 0, 0.16);
     min-width: 7em;
+
+    @media (max-width: 480px) {
+      min-width: 3.5em;
+    }
   }
 
   td {
