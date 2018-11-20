@@ -9,8 +9,9 @@ const Links = styled(Paragraph)`
 
   @media (max-width: 480px) {
     text-align: center;
-    padding: 1em 0;
+    padding-bottom: 1em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    margin-bottom: 2em;
   }
 `;
 

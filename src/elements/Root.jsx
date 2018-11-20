@@ -27,7 +27,7 @@ const Inner = styled.div`
 
   @media (max-width: 480px) {
     text-align: center;
-    padding: 1.5em;
+    padding: 2em 1.5em;
   }
 `;
 
