@@ -84,8 +84,8 @@ const IndexPage = () => (
     <Paragraph>
       More concretely, I am super proud of the work we&apos;ve done at&nbsp;
       <a href="https://robin.live">Robin Media</a>
-      , where I lead the development of our initiatives up until September 2018.
-      I also lead a 2-year rewrite of the&nbsp;
+      , where I led the development of our initiatives up until September 2018.
+      I also led a 2-year rewrite of the&nbsp;
       <a href="https://lyricfind.com">LyricFind</a>
       &nbsp;backend systems from 2014-2016.
       I also took on a good amount of the product and project

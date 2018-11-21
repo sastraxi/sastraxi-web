@@ -86,7 +86,7 @@ const IndexPage = () => (
         Management responsibilities included managing the development team, splitting
         product management duties with our design lead, performing user interviews
         and crafting narratives, sprint planning, and working with my co-founders
-        to craft company vision. In addition, I lead development efforts, building
+        to craft company vision. In addition, I led development efforts, building
         proof-of-concept systems, choosing the&nbsp;
         <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
           right technologies
