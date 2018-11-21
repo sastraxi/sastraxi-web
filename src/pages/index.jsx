@@ -47,19 +47,26 @@ const IndexPage = () => (
     </Paragraph>
     <Paragraph>
       I solve tech, product, and usability problems by breaking them down and
-      approaching them from every angle imaginable. Building user stories, performing
-      user inteviews, more formal requirements analysis, and expectaton setting
-      are all tools I have used to succesfully deliver products within reasonable
-      timeframes and budgets.
+      approaching them from different perspectives.
+
+      Sometimes it&apos;s better
+      to build a quick proof-of-concept or even a landing page to capture
+      interest than to build the new feature outright.
+
+      Other times, it&apos;s a matter of weighing technical debt against
+      the business use case, coming up with the simplest robust design,
+      reducing scope, and making sure the team moves forward together.
     </Paragraph>
     <Paragraph>
-      I believe that there is no one
-      correct approach to building software.
+      I have used this methodology to successfully deliver many products
+      within reasonable timeframes and budgets, all under various degrees
+      of uncertainty. I believe that there are many correct approaches
+      to building software.
     </Paragraph>
     <Paragraph>
       I have been mentoring students at&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
-      &nbsp;for a few months now, and it has been deeply satsifying witnessing
+      &nbsp;for a few months now, and it has been deeply satisfying witnessing
       their journeys. There are these moments when their eyes light up
       and they make a hundred connections at once in their brains about programming and
       for that brief second it all makes sense. I love that feeling myself,
@@ -85,8 +92,15 @@ const IndexPage = () => (
         technical writing
       </a>
       . In this article, I walk the reader through building a simple
-      stitched GraphQL schema using node.js and&nbsp;
+      stitched GraphQL schema using node.js,&nbsp;
       <a href="https://www.graphile.org/postgraphile/">PostGraphile</a>
+      , and&nbsp;
+      <a href="https://stripe.com">Stripe</a>
+      .
+    </Paragraph>
+    <Paragraph>
+      This site was built using&nbsp;
+      <a href="https://gatsbyjs.org">Gatsby</a>
       .
     </Paragraph>
     <Paragraph>
@@ -96,13 +110,8 @@ const IndexPage = () => (
       </a>
       &nbsp;in Toronto, Ontario. The band&apos;s website is
       another example of a static site written in Gatsby; the source
-      code is available on my&nbsp;
-      <a href="https://github.com/sastraxi">Github</a>
-      .
-    </Paragraph>
-    <Paragraph>
-      This site was built using&nbsp;
-      <a href="https://gatsbyjs.org">Gatsby</a>
+      code is available on&nbsp;
+      <a href="https://github.com/sastraxi/mff-web">Github</a>
       .
     </Paragraph>
   </Root>
