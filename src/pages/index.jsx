@@ -6,6 +6,7 @@ import Badge from '../elements/Badge';
 import Root from '../elements/Root';
 import Heading from '../elements/Heading';
 import Subheading from '../elements/Subheading';
+import SectionHeader from '../elements/SectionHeader';
 import Paragraph from '../elements/Paragraph';
 import Links from '../elements/Links';
 import SkillsTable from '../components/SkillsTable';
@@ -82,9 +83,9 @@ const IndexPage = () => (
       I also took on a good amount of the product and project
       management tasks for these efforts.
     </Paragraph>
-    <Subheading>
+    <SectionHeader>
       Selected technical skills
-    </Subheading>
+    </SectionHeader>
     <SkillsTable />
     <Paragraph>
       Here is an example of my&nbsp;

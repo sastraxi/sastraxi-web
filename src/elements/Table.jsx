@@ -40,7 +40,7 @@ const RenderedTable = ({ data, headers }) => (
           const headerText = o[key];
           const items = data[key];
           return (
-            <tr>
+            <tr key={key}>
               <th>{ headerText }</th>
               <td>{ items.join(', ') }</td>
             </tr>
