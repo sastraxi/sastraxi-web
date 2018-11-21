@@ -60,7 +60,7 @@ const IndexPage = () => (
       I have been mentoring students at&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
       &nbsp;for a few months now, and it has been deeply satsifying witnessing
-      their journies. There are these moments when their eyes light up
+      their journeys. There are these moments when their eyes light up
       and they make a hundred connections at once in their brains about programming and
       for that brief second it all makes sense. I love that feeling myself,
       and I love helping others get there.
