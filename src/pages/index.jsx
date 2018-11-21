@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Cam from '../elements/images/Cam';
 
@@ -6,10 +7,9 @@ import Badge from '../elements/Badge';
 import Root from '../elements/Root';
 import Heading from '../elements/Heading';
 import Subheading from '../elements/Subheading';
-import SectionHeader from '../elements/SectionHeader';
 import Paragraph from '../elements/Paragraph';
 import Links from '../elements/Links';
-import SkillsTable from '../components/SkillsTable';
+import SectionHeader from '../elements/SectionHeader';
 
 const IndexPage = () => (
   <Root>
@@ -19,10 +19,10 @@ const IndexPage = () => (
       Software architect, entrepreneur, mentor
     </Subheading>
     <Links>
+      <Link to="/resume">Résumé</Link>
       <a href="mailto:sastraxi+weblinks@gmail.com">Email</a>
       <a href="https://github.com/sastraxi">Github</a>
       <a href="https://www.linkedin.com/in/camerongorrie/">Linkedin</a>
-      <a href="https://angel.co/cam-gorrie">AngelList</a>
     </Links>
     <Paragraph>
       Mentor / instructor @&nbsp;
@@ -33,6 +33,8 @@ const IndexPage = () => (
       <a href="https://streetcontxt.com">Street Contxt</a>
       , software team lead @&nbsp;
       <a href="https://lyricfind.com">LyricFind</a>
+      . Techstars Music 2017&nbsp;
+      <a href="https://www.techstars.com/content/accelerators/announcing-techstars-music-2017-one-goes-11/">alumni</a>
       .
     </Paragraph>
     <Paragraph>
@@ -40,6 +42,9 @@ const IndexPage = () => (
       <a href="mailto:sastraxi+webcta@gmail.com">Get in touch</a>
       .
     </Paragraph>
+    <SectionHeader>
+      How I work
+    </SectionHeader>
     <Paragraph>
       I solve people problems by supporting, mentoring, and enabling my co-workers,
       as well as by contributing in management capacities. Over my career, I have
@@ -64,6 +69,9 @@ const IndexPage = () => (
       of uncertainty. I believe that there are many correct approaches
       to building software.
     </Paragraph>
+    <SectionHeader>
+      What I&apos;m up to
+    </SectionHeader>
     <Paragraph>
       I have been mentoring students at&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
@@ -83,10 +91,6 @@ const IndexPage = () => (
       I also took on a good amount of the product and project
       management tasks for these efforts.
     </Paragraph>
-    <SectionHeader>
-      Selected technical skills
-    </SectionHeader>
-    <SkillsTable />
     <Paragraph>
       Here is an example of my&nbsp;
       <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
@@ -100,19 +104,19 @@ const IndexPage = () => (
       .
     </Paragraph>
     <Paragraph>
-      This site was built using&nbsp;
-      <a href="https://gatsbyjs.org">Gatsby</a>
-      .
-    </Paragraph>
-    <Paragraph>
       I perform with a band called&nbsp;
       <a href="https://myfavouritefilter.com">
         My Favourite Filter
       </a>
-      &nbsp;in Toronto, Ontario. The band&apos;s website is
+      &nbsp;in Toronto. The band&apos;s website is
       another example of a static site written in Gatsby; the source
       code is available on&nbsp;
       <a href="https://github.com/sastraxi/mff-web">Github</a>
+      .
+    </Paragraph>
+    <Paragraph>
+      This site was built using&nbsp;
+      <a href="https://gatsbyjs.org">Gatsby</a>
       .
     </Paragraph>
   </Root>
