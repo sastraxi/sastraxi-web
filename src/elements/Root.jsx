@@ -37,8 +37,8 @@ const Wrapper = ({ children }) => (
     <Helmet
       title="Cameron Gorrie | sastraxi.com"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'The portfolio / resume website for Cameron Gorrie' },
+        { name: 'keywords', content: 'resume, cv, portfolio, dev, gatsby' },
       ]}
     >
       <html lang="en" />
