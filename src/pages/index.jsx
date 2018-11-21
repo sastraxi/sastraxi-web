@@ -72,7 +72,8 @@ const IndexPage = () => (
       I also lead a 2-year rewrite of the&nbsp;
       <a href="https://lyricfind.com">LyricFind</a>
       &nbsp;backend systems from 2014-2016.
-      I was also (largely) responsible for product and project management on these efforts.
+      I also took on a good amount of the product and project
+      management tasks for these efforts.
     </Paragraph>
     <Subheading>
       Selected technical skills
