@@ -34,7 +34,7 @@ const IndexPage = () => (
       , software team lead @&nbsp;
       <a href="https://lyricfind.com">LyricFind</a>
       . Techstars Music 2017&nbsp;
-      <a href="https://www.techstars.com/content/accelerators/announcing-techstars-music-2017-one-goes-11/">alumni</a>
+      <a href="https://www.techstars.com/content/accelerators/announcing-techstars-music-2017-one-goes-11/">alumnus</a>
       .
     </Paragraph>
     <Paragraph>
@@ -109,13 +109,13 @@ const IndexPage = () => (
         My Favourite Filter
       </a>
       &nbsp;in Toronto. The band&apos;s website is
-      another example of a static site written in Gatsby; the source
+      an example of a static site written in React using Gatsby; the source
       code is available on&nbsp;
       <a href="https://github.com/sastraxi/mff-web">Github</a>
       .
     </Paragraph>
     <Paragraph>
-      This site was built using&nbsp;
+      This site was also built using&nbsp;
       <a href="https://gatsbyjs.org">Gatsby</a>
       .
     </Paragraph>
