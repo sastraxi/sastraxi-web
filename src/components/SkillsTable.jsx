@@ -29,6 +29,7 @@ const SKILLS = {
     'JOOQ',
     'Redis',
     'ElasticSearch',
+    'email deliverability',
     'GLSL',
   ],
   product: [

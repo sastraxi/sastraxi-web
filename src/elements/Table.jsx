@@ -12,6 +12,9 @@ const Table = styled.table`
   }
 
   th {
+    padding-top: 0.2em;
+    line-height: 100%;
+
     padding-right: 1em;
     border-right: 1px solid rgba(0, 0, 0, 0.16);
     min-width: 7em;
@@ -25,9 +28,14 @@ const Table = styled.table`
     padding-left: 1em;
   }
 
+  tr:first-child td,
+  tr:first-child th {
+    padding-top: 0.5em;
+  }
+
   tr:last-child td,
   tr:last-child th {
-    padding-bottom: 0;
+    padding-bottom: 0.5em;
   }
 `;
 
