@@ -20,6 +20,13 @@ const Inner = styled.div`
 
   a {
     color: ${BRAND_COLOUR};
+    @media print {
+      &:after {
+        content:" (" attr(href) ") ";
+        font-size:0.8em;
+        font-weight:normal;
+      }
+    }
   }
 
   @media (max-width: 700px) {
@@ -29,6 +36,13 @@ const Inner = styled.div`
   @media (max-width: 480px) {
     text-align: center;
     padding: 2em 1.5em;
+  }
+
+  @media print {
+    padding: 2em !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: unset;
   }
 `;
 

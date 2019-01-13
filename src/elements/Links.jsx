@@ -13,6 +13,10 @@ const Links = styled(Paragraph)`
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
     margin-bottom: 2em;
   }
+
+  @media print {
+    display: none;
+  }
 `;
 
 export default Links;
