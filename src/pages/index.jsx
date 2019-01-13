@@ -115,7 +115,8 @@ const IndexPage = () => (
       .
     </Paragraph>
     <Paragraph>
-      This site was also built using&nbsp;
+      <a href="https://github.com/sastraxi/sastraxi-web">This site</a>
+      &nbsp;was also built using&nbsp;
       <a href="https://gatsbyjs.org">Gatsby</a>
       .
     </Paragraph>
