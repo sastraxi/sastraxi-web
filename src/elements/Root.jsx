@@ -22,9 +22,9 @@ const Inner = styled.div`
     color: ${BRAND_COLOUR};
     @media print {
       &:after {
-        content:" (" attr(href) ") ";
-        font-size:0.8em;
-        font-weight:normal;
+        content:" (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
       }
     }
   }
