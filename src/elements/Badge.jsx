@@ -12,6 +12,10 @@ const BadgeOuter = styled.span`
   padding: 0;
   overflow: hidden;
   border: 3px solid ${BRAND_COLOUR};
+
+  @media print {
+    display: none;
+  }
 `;
 
 const Badge = ({ image, size }) => (

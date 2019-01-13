@@ -12,6 +12,8 @@ import SectionHeader from '../elements/SectionHeader';
 import Paragraph from '../elements/Paragraph';
 import Links from '../elements/Links';
 import SkillsTable from '../components/SkillsTable';
+import ContactDetails from '../components/ContactDetails';
+
 import { BRAND_COLOUR } from '../elements/global';
 
 const Company = styled.div`
@@ -42,6 +44,7 @@ const IndexPage = () => (
     <Subheading>
       Software architect, entrepreneur, mentor
     </Subheading>
+    <ContactDetails />
     <Links>
       <Link to="/">Back to the first page</Link>
     </Links>
