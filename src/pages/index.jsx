@@ -47,9 +47,9 @@ const IndexPage = () => (
     </SectionHeader>
     <Paragraph>
       I solve people problems by supporting, mentoring, and enabling my co-workers,
-      as well as by contributing in management capacities. Over my career, I have
-      gained a wealth of experience both in managing dev teams and facilitating
-      communication between different branches of organisations.
+      as well as by contributing in management capacities through servant leadership.
+      Over my career, I have gained a wealth of experience both in managing dev teams
+      and facilitating communication between different branches of organisations.
     </Paragraph>
     <Paragraph>
       I solve tech, product, and usability problems by breaking them down and
@@ -61,7 +61,8 @@ const IndexPage = () => (
 
       Other times, it&apos;s a matter of weighing technical debt against
       the business use case, coming up with the simplest robust design,
-      reducing scope, and making sure the team moves forward together.
+      reducing scope, and making sure the team moves forward together
+      while communicating with external stakeholders.
     </Paragraph>
     <Paragraph>
       I have used this methodology to successfully deliver many products
