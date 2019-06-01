@@ -79,6 +79,7 @@ const IndexPage = () => (
       Most recently, I joined&nbsp;
       <a href="https://tophat.com/">Top Hat</a>
       &nbsp;as a Senior Engineering Manager.
+    </Paragraph>
     <Paragraph>
       I have been mentoring students at&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
