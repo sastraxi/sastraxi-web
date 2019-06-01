@@ -76,6 +76,10 @@ const IndexPage = () => (
       What I&apos;m up to
     </SectionHeader>
     <Paragraph>
+      Most recently, I joined&nbsp;
+      <a href="https://tophat.com/">Top Hat</a>
+      &nbsp;as a Senior Engineering Manager.
+    <Paragraph>
       I have been mentoring students at&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
       &nbsp;for a few months now, and it has been deeply satisfying witnessing
@@ -107,19 +111,8 @@ const IndexPage = () => (
       .
     </Paragraph>
     <Paragraph>
-      I perform with a band called&nbsp;
-      <a href="https://myfavouritefilter.com">
-        My Favourite Filter
-      </a>
-      &nbsp;in Toronto. The band&apos;s website is
-      an example of a static site written in React using Gatsby; the source
-      code is available on&nbsp;
-      <a href="https://github.com/sastraxi/mff-web">Github</a>
-      .
-    </Paragraph>
-    <Paragraph>
       <a href="https://github.com/sastraxi/sastraxi-web">This site</a>
-      &nbsp;was also built using&nbsp;
+      &nbsp;was built using&nbsp;
       <a href="https://gatsbyjs.org">Gatsby</a>
       .
     </Paragraph>
