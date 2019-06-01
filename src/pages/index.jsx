@@ -25,9 +25,11 @@ const IndexPage = () => (
       <a href="https://www.linkedin.com/in/camerongorrie/">Linkedin</a>
     </Links>
     <Paragraph>
-      Mentor / instructor @&nbsp;
+      Senior Engineering Manager @&nbsp;
+      <a href="https://tophat.com">Top Hat</a>
+      . Formerly a mentor / instructor @&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
-      . Formerly CTO @&nbsp;
+      , CTO @&nbsp;
       <a href="https://robin.live">Robin Media</a>
       , dev @&nbsp;
       <a href="https://streetcontxt.com">Street Contxt</a>
