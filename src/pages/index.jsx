@@ -25,7 +25,7 @@ const IndexPage = () => (
       <a href="https://www.linkedin.com/in/camerongorrie/">Linkedin</a>
     </Links>
     <Paragraph>
-      Senior Engineering Manager @&nbsp;
+      Super Nifty Engineering Manager @&nbsp;
       <a href="https://tophat.com">Top Hat</a>
       . Formerly a mentor / instructor @&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
