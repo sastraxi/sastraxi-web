@@ -76,9 +76,9 @@ const IndexPage = () => (
       What I&apos;m up to
     </SectionHeader>
     <Paragraph>
-      Most recently, I joined&nbsp;
+      In April 2019, I joined&nbsp;
       <a href="https://tophat.com/">Top Hat</a>
-      &nbsp;as a Senior Engineering Manager.
+      &nbsp;and currently serve the business as a Director of Engineering.
     </Paragraph>
     <Paragraph>
       I have been mentoring students at&nbsp;
@@ -116,6 +116,9 @@ const IndexPage = () => (
       &nbsp;was built using&nbsp;
       <a href="https://gatsbyjs.org">Gatsby</a>
       .
+    </Paragraph>
+    <Paragraph>
+      <a href="https://myfavouritefilter.bandcamp.com/">My Favourite Filter on Bandcamp</a>
     </Paragraph>
   </Root>
 );
