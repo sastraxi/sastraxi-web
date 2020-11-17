@@ -35,7 +35,7 @@ const Duties = styled.div`
       padding-top: 0.6em;
     }
   }
-  @media (print) {
+  @media print {
     font-size: 80%;
     margin-right: 2em;
   }
