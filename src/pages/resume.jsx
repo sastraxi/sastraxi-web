@@ -32,7 +32,7 @@ const Duties = styled.div`
     border-left: 1px solid ${BRAND_COLOUR};
     & + & {
       margin-top: 0;
-      padding-top: 0.4em;
+      padding-top: 0.6em;
     }
   }
 `;
@@ -61,8 +61,9 @@ const IndexPage = () => (
         As part of the leadership team of the Product & Engineering department,
         my duties have ranged from mentoring ICs, coaching team and technology leads,
         software architecture, designing and running pre- and post-mortem sessions, to
-        adapting and adopting Basecamp's <a href="https://basecamp.com/shapeup">Shape Up</a>
-        for our business, stakeholder management, and being a partner to Product in
+        adapting and adopting Basecamp's&nbsp;
+        <a href="https://basecamp.com/shapeup">Shape Up</a>
+        &nbsp;for our business, stakeholder management, and being a partner to Product in
         shaping the future of classrooms in higher education.
       </Duties>
       <Duties>
@@ -74,8 +75,14 @@ const IndexPage = () => (
         while being clear and pragmatic about next steps.
       </Duties>
       <Duties>
-        Overall, I'm grateful to work at a company with supremely talented individuals
-        and a meaningful mission.
+        Recently, I directed our initiative to bring&nbsp;
+        <a href="https://tophat.com/news/top-hat-launches-free-virtual-classroom-capabilities-to-help-educators-better-engage-and-motivate-higher-ed-students/">
+          video streaming to our classroom offering
+        </a>.
+        This meant building a WebRTC-based proof-of-concept, evaluating different vendors,
+        contract negotiation, post-sales relationship management, and building knowledge
+        about video inside of our team. I'm grateful to work at a company with
+        supremely talented individuals and a meaningful mission.
       </Duties>
     </Paragraph>
     <Paragraph>
