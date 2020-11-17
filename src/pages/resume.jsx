@@ -59,12 +59,14 @@ const IndexPage = () => (
       <Date>Apr 2019 to present</Date>
       <Duties>
         As part of the leadership team of the Product & Engineering department,
-        my duties have ranged from mentoring ICs, coaching team and technology leads,
-        software architecture, designing and running pre- and post-mortem sessions, to
-        adapting and adopting Basecamp's&nbsp;
+        my duties have been diverse. Internal to Engineering, I've spent my time mentoring ICs,
+        coaching team and technology leads, building software architecture and documentation,
+        and designing and running group sessions (such as premortems). Organization-wide, I played
+        a key role in adapting Basecamp's&nbsp;
         <a href="https://basecamp.com/shapeup">Shape Up</a>
-        &nbsp;for our business, stakeholder management, and being a partner to Product in
-        shaping the future of classrooms in higher education.
+        &nbsp;for our business (then working cross-functionally to adopt it). A large facet of my
+        responsibilities in 2020 have revolved around stakeholder management and being a partner
+        to Product in shaping the future of classrooms in higher education.
       </Duties>
       <Duties>
         At the core of this is the people-centric approach that I bring to everything I do.
@@ -72,7 +74,9 @@ const IndexPage = () => (
         that a number of business pivots and reorganizations were received warmly by our
         developers, leads, and partners across the organisation. This has meant providing
         as much transparency as possible on decision-making happening at the exec level,
-        while being clear and pragmatic about next steps.
+        while being clear and pragmatic about next steps, and sometimes pushing back and
+        challenging those in senior leadership positions to build solutions that work for
+        the whole business.
       </Duties>
       <Duties>
         Recently, I directed our initiative to bring&nbsp;
