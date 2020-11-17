@@ -32,7 +32,7 @@ const Duties = styled.div`
     border-left: 1px solid ${BRAND_COLOUR};
     & + & {
       margin-top: 0;
-      padding-top: 0.4em;
+      padding-top: 0.6em;
     }
   }
 `;
@@ -53,17 +53,55 @@ const IndexPage = () => (
     </SectionHeader>
     <Paragraph>
       <Company>
+        <a href="https://tophat.com">Top Hat</a>
+        &nbsp;(Director of Engineering)
+      </Company>
+      <Date>Apr 2019 to present</Date>
+      <Duties>
+        As part of the leadership team of the Product & Engineering department,
+        my duties have been diverse. Internal to Engineering, I've spent my time mentoring ICs,
+        coaching team and technology leads, building software architecture and documentation,
+        and designing and running group sessions (such as premortems). Organization-wide, I played
+        a key role in adapting Basecamp's&nbsp;
+        <a href="https://basecamp.com/shapeup">Shape Up</a>
+        &nbsp;for our business (then working cross-functionally to adopt it). A large facet of my
+        responsibilities in 2020 have revolved around stakeholder management and being a partner
+        to Product in shaping the future of classrooms in higher education.
+      </Duties>
+      <Duties>
+        At the core of this is the people-centric approach that I bring to everything I do.
+        I've been part of and contributed our internal communications strategy, ensuring
+        that a number of business pivots and reorganizations were received warmly by our
+        developers, leads, and partners across the organisation. This has meant providing
+        as much transparency as possible on decision-making happening at the exec level,
+        while being clear and pragmatic about next steps, and sometimes pushing back and
+        challenging those in senior leadership positions to build solutions that work for
+        the whole business.
+      </Duties>
+      <Duties>
+        Recently, I directed our initiative to bring&nbsp;
+        <a href="https://tophat.com/news/top-hat-launches-free-virtual-classroom-capabilities-to-help-educators-better-engage-and-motivate-higher-ed-students/">
+          video streaming to our classroom offering
+        </a>.
+        This meant building a WebRTC-based proof-of-concept, evaluating different vendors,
+        contract negotiation, post-sales relationship management, and building knowledge
+        about video inside of our team. I'm grateful to work at a company with
+        supremely talented individuals and a meaningful mission.
+      </Duties>
+    </Paragraph>
+    <Paragraph>
+      <Company>
         <a href="https://lighthouselabs.ca">Lighthouse Labs</a>
         &nbsp;(Mentor, lecturer)
       </Company>
-      <Date>May 2018 to present</Date>
+      <Date>May 2018 to Apr 2019</Date>
       <Duties>
         Students in the web development immersive program at Lighthouse
         embark on a 10 week program to learn how to build software using
         Javascript, React, Ruby on Rails, and PostgreSQL. As a mentor,
-        I help students get &quot;unstuck&quot; and try to transfer some
+        I helped students get &quot;unstuck&quot; and tried to transfer some
         of my high-level knowledge and instil best practices. I also
-        prepare and give lectures on the course material (
+        prepared and gave lectures to complement the course material (
         <a href="https://github.com/sastraxi/w2d1-node-api-demo">an example</a>
         ).
       </Duties>
