@@ -4,6 +4,7 @@ import Paragraph from '../elements/Paragraph';
 
 const ContactDetails = styled(Paragraph)`
   margin-top: -0.5em;
+  font-size: 
 
   a:after {
     content: none;
@@ -19,6 +20,6 @@ export default () => (
   <ContactDetails>
     Email&nbsp;
     <a href="mailto:sastraxi+resume@gmail.com">sastraxi@gmail.com</a>
-    , or call 747.275.8996
+    , or call 647.551.9485
   </ContactDetails>
 );
