@@ -53,17 +53,44 @@ const IndexPage = () => (
     </SectionHeader>
     <Paragraph>
       <Company>
+        <a href="https://tophat.com">Top Hat</a>
+        &nbsp;(Director of Engineering)
+      </Company>
+      <Date>Apr 2019 to present</Date>
+      <Duties>
+        As part of the leadership team of the Product & Engineering department,
+        my duties have ranged from mentoring ICs, coaching team and technology leads,
+        software architecture, designing and running pre- and post-mortem sessions, to
+        adapting and adopting Basecamp's <a href="https://basecamp.com/shapeup">Shape Up</a>
+        for our business, stakeholder management, and being a partner to Product in
+        shaping the future of classrooms in higher education.
+      </Duties>
+      <Duties>
+        At the core of this is the people-centric approach that I bring to everything I do.
+        I've been part of and contributed our internal communications strategy, ensuring
+        that a number of business pivots and reorganizations were received warmly by our
+        developers, leads, and partners across the organisation. This has meant providing
+        as much transparency as possible on decision-making happening at the exec level,
+        while being clear and pragmatic about next steps.
+      </Duties>
+      <Duties>
+        Overall, I'm grateful to work at a company with supremely talented individuals
+        and a meaningful mission.
+      </Duties>
+    </Paragraph>
+    <Paragraph>
+      <Company>
         <a href="https://lighthouselabs.ca">Lighthouse Labs</a>
         &nbsp;(Mentor, lecturer)
       </Company>
-      <Date>May 2018 to present</Date>
+      <Date>May 2018 to Apr 2019</Date>
       <Duties>
         Students in the web development immersive program at Lighthouse
         embark on a 10 week program to learn how to build software using
         Javascript, React, Ruby on Rails, and PostgreSQL. As a mentor,
-        I help students get &quot;unstuck&quot; and try to transfer some
+        I helped students get &quot;unstuck&quot; and tried to transfer some
         of my high-level knowledge and instil best practices. I also
-        prepare and give lectures on the course material (
+        prepared and gave lectures to complement the course material (
         <a href="https://github.com/sastraxi/w2d1-node-api-demo">an example</a>
         ).
       </Duties>
