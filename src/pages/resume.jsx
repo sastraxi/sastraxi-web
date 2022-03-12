@@ -62,19 +62,14 @@ const IndexPage = () => (
       </Company>
       <Date>Apr 2019 to present</Date>
       <Duties>
-        As part of the leadership team of the Product & Engineering department,
-        my duties have been diverse. Internal to Engineering, I've spent my time mentoring ICs,
+        As part of the leadership team of the Product &amp; Engineering department,
+        my duties have been diverse. Internal to Engineering, I&apos;ve spent my time mentoring ICs,
         coaching team and technology leads, building software architecture and documentation,
-        and designing and running group sessions (such as premortems). Organization-wide, I played
-        a key role in adapting Basecamp's&nbsp;
-        <a href="https://basecamp.com/shapeup">Shape Up</a>
-        &nbsp;for our business (then working cross-functionally to adopt it). A large facet of my
-        responsibilities in 2020 have revolved around stakeholder management and being a partner
-        to Product in shaping the future of classrooms in higher education.
+        and designing and running group sessions (such as premortems and design jams).
       </Duties>
       <Duties>
         At the core of this is the people-centric approach that I bring to everything I do.
-        I've been part of and contributed our internal communications strategy, ensuring
+        I&apos;ve been part of and contributed our internal communications strategy, ensuring
         that a number of business pivots and reorganizations were received warmly by our
         developers, leads, and partners across the organisation. This has meant providing
         as much transparency as possible on decision-making happening at the exec level,
@@ -83,14 +78,54 @@ const IndexPage = () => (
         the whole business.
       </Duties>
       <Duties>
-        Recently, I directed our initiative to bring&nbsp;
+        What follows is a small selection of experiences from my time at
+        Top Hat.
+      </Duties>
+      <Duties>
+        In 2019, I flagged the need for, designed and drove the implementation of a
+        new (&quot;ABAC&quot;)
+        authorization service in order to provide the role flexibility our institutional partners
+        were asking for. I helped drive the decision to create a technical lead career ladder,
+        providing paths for ICs who were looking to make their impact at a larger scale (but without
+        getting involved in people management). We implemented a new Agile process based on
+        Basecamp&apos;s
+        {' '}
+        <a href="https://basecamp.com/shapeup">Shape Up</a>
+        . A group of individual contributors and I implemented a strategy
+        for dealing with interruptive issues that ensured
+        that those who had ownership and knowledge could get involved directly, leading
+        to a reduction of MTTR.
+      </Duties>
+      <Duties>
+        In 2020, I directed our initiative to bring
+        {' '}
         <a href="https://tophat.com/news/top-hat-launches-free-virtual-classroom-capabilities-to-help-educators-better-engage-and-motivate-higher-ed-students/">
           video streaming to our classroom offering
-        </a>.
-        This meant building a WebRTC-based proof-of-concept, evaluating different vendors,
+        </a>
+        . This meant building a WebRTC-based proof-of-concept, evaluating different vendors,
         contract negotiation, post-sales relationship management, and building knowledge
-        about video inside of our team. I'm grateful to work at a company with
-        supremely talented individuals and a meaningful mission.
+        about video inside of our team. I was part of the effort to shift our department
+        to a remote-first model (prompted in part by the pandemic), and during this year I also
+        spent a lot of time revamping our hiring processes, including building a case study
+        that we still use for all higher-level hires.
+      </Duties>
+      <Duties>
+        In 2021, I focused on further improving our hiring strategy and assisted in onboarding a
+        {' '}
+        <a href="https://tophat.com/press-releases/top-hat-acquires-morton/">textbook publisher</a>
+        {' '}
+        that we acquired. I ran a series of design jams with developers, designers, and product
+        managers to determine what exactly we should build to help the STEM needs of our new
+        customers. I collaborated with Product in starting a relationship with a contractor
+        in order to help us achieve LTI 1.3 compliance for &quot;deep linking&quot; needs,
+        and spent time investigating the parts of our codebase that were slowing us down.
+      </Duties>
+      <Duties>
+        In 2022, I focused on the developer experience of our frontend platform
+        and the performance of our web applications. I optimized the (shared) critical boostrap path
+        of our applications, improving many of the core web vitals of our apps by around 15% (P75).
+        I have done this both as an IC and through my management of the Staff and Frontend
+        Platform engineering teams.
       </Duties>
     </Paragraph>
     <Paragraph>
@@ -136,8 +171,8 @@ const IndexPage = () => (
         <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
           right technologies
         </a>
-        , managing technical debt, and making sure our
-        products were deployed properly.
+        , makin the right choices regarding &quot;technical debt&quot;, and making sure our
+        products were deployed properly and in an automated fashion.
       </Duties>
     </Paragraph>
     <Paragraph>
@@ -151,6 +186,10 @@ const IndexPage = () => (
         features to a research exchange/marketplace web application aimed
         towards investment banks. Technologies used include Scala/Java, Solr,
         PostgreSQL, Apache Spark, Webpack, React, Knockout.
+      </Duties>
+      <Duties>
+        The majority of my time here was spent optimizing our search infrastructure
+        as well as ensuring that our emails were not flagged as spam or low-quality.
       </Duties>
     </Paragraph>
     <Paragraph>
