@@ -17,13 +17,20 @@ import { BRAND_COLOUR } from '../elements/global';
 const EssayPage = () => (
   <Root>
     <Badge size="160px" image={<Cam />} />
-    <Heading>Are you over-constrained or under-constrained?</Heading>
+    <Heading>Too many constraints, or not enough?</Heading>
     <Subheading>
       At work, accountability and achievability play a constant tug-of-war in your mind.
       Are you getting caught in the middle?
     </Subheading>
     <Paragraph>
-      Abc Def Ghi
+      By Cameron Gorrie
+      {' '}
+      &lt;
+      <a href="mailto:sastraxi@gmail.com">sastraxi@gmail.com</a>
+      &gt;, March 2022
+    </Paragraph>
+    <Paragraph>
+      Hello
     </Paragraph>
   </Root>
 );
