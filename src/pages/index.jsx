@@ -120,6 +120,9 @@ const IndexPage = () => (
     <Paragraph>
       <a href="https://myfavouritefilter.bandcamp.com/">My Favourite Filter on Bandcamp</a>
     </Paragraph>
+    <Paragraph>
+      <a href="https://seedling.bandcamp.com/">Seedling on Bandcamp</a>
+    </Paragraph>
   </Root>
 );
 
