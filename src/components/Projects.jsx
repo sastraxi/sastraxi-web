@@ -23,7 +23,7 @@ const Projects = () => (
         <a href="https://sendy.video">website</a>
         {', '}
         <a href="https://github.com/sastraxi/sendy-video">github</a>
-        )
+        ) - currently experiencing slow cold start times
       </li>
     </ul>
   </Container>
