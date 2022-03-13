@@ -10,6 +10,7 @@ import Subheading from '../elements/Subheading';
 import Paragraph from '../elements/Paragraph';
 import Links from '../elements/Links';
 import SectionHeader from '../elements/SectionHeader';
+import Projects from '../components/Projects';
 
 const IndexPage = () => (
   <Root>
@@ -101,6 +102,8 @@ const IndexPage = () => (
       &nbsp;backend systems from 2014-2016. I also took on a good amount of the
       product and project management tasks for these efforts.
     </Paragraph>
+    <SectionHeader>Selected projects</SectionHeader>
+    <Projects />
     <SectionHeader>Miscellaneous</SectionHeader>
     <Paragraph>
       <a href="https://github.com/sastraxi/sastraxi-web">This site</a>

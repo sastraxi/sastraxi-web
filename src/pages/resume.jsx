@@ -15,6 +15,7 @@ import SkillsTable from '../components/SkillsTable';
 import ContactDetails from '../components/ContactDetails';
 
 import { BRAND_COLOUR } from '../elements/global';
+import Projects from '../components/Projects';
 
 const Company = styled.div`
   font-weight: bold;
@@ -230,6 +231,10 @@ const IndexPage = () => (
       <a href="https://www.eiffel.org/doc/solutions/Concurrent_programming_with_SCOOP">SCOOP paradigm</a>
       &nbsp;from Eiffel).
     </Paragraph>
+    <SectionHeader>
+      Selected projects
+    </SectionHeader>
+    <Projects />
     <SectionHeader>
       Selected technical skills
     </SectionHeader>

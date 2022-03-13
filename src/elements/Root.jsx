@@ -14,9 +14,10 @@ const Inner = styled.div`
   padding-right: 4.2em;
   background: white;
   box-shadow: ${BOX_SHADOW};
-  max-width: 700px;
+  max-width: 800px;
+  border-left: 5px solid ${BRAND_COLOUR};
   border-right: 5px solid ${BRAND_COLOUR};
-  margin: 0;
+  margin: 0 auto;
 
   a {
     color: ${BRAND_COLOUR};
@@ -29,7 +30,8 @@ const Inner = styled.div`
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 820px) {
+    border-left: none;
     border-right: none;
   }
 

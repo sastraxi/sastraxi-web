@@ -4,7 +4,6 @@ import Paragraph from '../elements/Paragraph';
 
 const ContactDetails = styled(Paragraph)`
   margin-top: -0.5em;
-  font-size: 
 
   a:after {
     content: none;

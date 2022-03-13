@@ -6,8 +6,8 @@ import { BRAND_COLOUR } from './global';
 
 const BadgeOuter = styled.span`
   display: inline-block;
-  width: ${props => props.size};
-  height: ${props => props.size};
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
   border-radius: 50%;
   padding: 0;
   overflow: hidden;
