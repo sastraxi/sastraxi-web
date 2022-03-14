@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Table = styled.table`
+export const StyledTable = styled.table`
   text-align: left;
 
   th, td {
@@ -40,7 +40,7 @@ const Table = styled.table`
 `;
 
 const RenderedTable = ({ data, headers }) => (
-  <Table cellSpacing={0}>
+  <StyledTable cellSpacing={0}>
     <tbody>
       {
         headers.map((o) => {
@@ -56,7 +56,7 @@ const RenderedTable = ({ data, headers }) => (
         })
       }
     </tbody>
-  </Table>
+  </StyledTable>
 );
 
 /* eslint-disable react/forbid-prop-types */
