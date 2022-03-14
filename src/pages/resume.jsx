@@ -206,20 +206,34 @@ const IndexPage = () => (
       </Duties>
     </Paragraph>
     <Paragraph>
-      Other substantial projects I&apos;ve worked on include&nbsp;
+      Other substantial projects I&apos;ve worked on include
+      {' '}
       <b>Live Lecture</b>
-      &nbsp;(an education-focused video streaming platform built with Python and&nbsp;
+      {' '}
+      (an education-focused video streaming platform built with Python and
+      {' '}
       <a href="https://www.wowza.com/">Wowza</a>
-      ),&nbsp;
+      ),
+      {' '}
       <b>DCS Infosys</b>
-      &nbsp;(a project to digitise the records of the Department of
-      Computer Science at the University of Toronto), and&nbsp;
+      {' '}
+      (a project to digitise the records of the Department of
+      Computer Science at the University of Toronto), and
+      {' '}
       <b>JSCOOP</b>
-      &nbsp;(a Java/Eclipse&nbsp;
+      {' '}
+      (a Java/Eclipse
+      {' '}
       <a href="https://code.google.com/archive/p/jscoop/">implementation</a>
-      &nbsp;of the&nbsp;
+      {' '}
+      of the
+      {' '}
       <a href="https://www.eiffel.org/doc/solutions/Concurrent_programming_with_SCOOP">SCOOP paradigm</a>
-      &nbsp;from Eiffel).
+      {' '}
+      from Eiffel; screencast available
+      {' '}
+      <a href="https://www.youtube.com/watch?v=J3N1VV2ngUk">here</a>
+      ).
     </Paragraph>
     <Together>
       <SectionHeader>
