@@ -139,7 +139,7 @@ const IndexPage = () => (
     <Paragraph>
       <Company>
         <a href="https://robin.live">Robin Media</a>
-        &nbsp;(CTO, co-founder)
+        &nbsp;(CTO, co-founder; acquired)
       </Company>
       <Date>September 2016 to August 2018</Date>
       <Duties>
@@ -163,7 +163,7 @@ const IndexPage = () => (
           right technologies
         </a>
         , makin the right choices regarding &quot;technical debt&quot;, and making sure our
-        products were deployed properly and in an automated fashion.
+        products were deployed properly and in an automated fashion via Kubernetes.
       </Duties>
     </Paragraph>
     <Paragraph>
