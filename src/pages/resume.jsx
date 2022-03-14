@@ -42,6 +42,10 @@ const Duties = styled.div`
   }
 `;
 
+const Together = styled.div`
+  page-break-inside: avoid;
+`;
+
 const IndexPage = () => (
   <Root>
     <Badge size="160px" image={<Cam />} />
@@ -94,9 +98,9 @@ const IndexPage = () => (
         , I transitioned to an individual contributor role at the Staff level
         with a specific focus on frontend performance and developer experience. I lent
         my time to the marketing team, finishing our redesign of our external-facing Catalog.
-        I wrote tests, fixed bugs, built admin tools for the back office, improved end-user
-        performance / SEO, and updated our Cloudformation templates to allow the site to be
-        rooted at both old and new URLs while the re-brand was occurring.
+        I wrote tests, fixed bugs, improved accessibility, built admin tools for the back
+        office, improved end-user performance, and updated our Cloudformation templates to
+        allow the site to be rooted at both old and new URLs while the re-brand was occurring.
       </Duties>
       <Duties>
         <b>In 2022</b>
@@ -127,7 +131,7 @@ const IndexPage = () => (
         Javascript, React, Ruby on Rails, and PostgreSQL. As a mentor,
         I helped students get &quot;unstuck&quot; and tried to transfer some
         of my high-level knowledge and instil best practices. I also
-        prepared and gave lectures to complement the course material (
+        prepared example code and gave lectures to complement the course material (
         <a href="https://github.com/sastraxi/w2d1-node-api-demo">an example</a>
         ).
       </Duties>
@@ -217,34 +221,42 @@ const IndexPage = () => (
       <a href="https://www.eiffel.org/doc/solutions/Concurrent_programming_with_SCOOP">SCOOP paradigm</a>
       &nbsp;from Eiffel).
     </Paragraph>
-    <SectionHeader>
-      Selected projects
-    </SectionHeader>
-    <Projects />
-    <SectionHeader>
-      Selected technical skills
-    </SectionHeader>
-    <SkillsTable />
-    <SectionHeader>
-      Education
-    </SectionHeader>
-    <Paragraph>
-      <Company>University of Toronto</Company>
-      <Date>September 2006 to August 2010</Date>
-      <Duties>
-        H.B.Sc. with Distinction, Computer Science
-        <br />
-        Specialty in Artificial Intelligence, Parallel Processing
-      </Duties>
-    </Paragraph>
-    <SectionHeader>
-      References
-    </SectionHeader>
-    <Paragraph>
-      Available&nbsp;
-      <a href="mailto:sastraxi+webrefs@gmail.com">by request</a>
-      .
-    </Paragraph>
+    <Together>
+      <SectionHeader>
+        Selected projects
+      </SectionHeader>
+      <Projects />
+    </Together>
+    <Together>
+      <SectionHeader>
+        Selected technical skills
+      </SectionHeader>
+      <SkillsTable />
+    </Together>
+    <Together>
+      <SectionHeader>
+        Education
+      </SectionHeader>
+      <Paragraph>
+        <Company>University of Toronto</Company>
+        <Date>September 2006 to August 2010</Date>
+        <Duties>
+          H.B.Sc. with Distinction, Computer Science
+          <br />
+          Specialty in Artificial Intelligence, Parallel Processing
+        </Duties>
+      </Paragraph>
+    </Together>
+    <Together>
+      <SectionHeader>
+        References
+      </SectionHeader>
+      <Paragraph>
+        Available&nbsp;
+        <a href="mailto:sastraxi+webrefs@gmail.com">by request</a>
+        .
+      </Paragraph>
+    </Together>
   </Root>
 );
 
