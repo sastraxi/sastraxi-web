@@ -138,11 +138,6 @@ const IndexPage = () => (
       <a href="https://seedling.bandcamp.com/">Seedling on Bandcamp</a>
       .
     </Paragraph>
-    <Paragraph>
-      I am currently building a product called elefant around social IDEs. If
-      you are interested in learning more or collaborating, feel free to get in
-      touch.
-    </Paragraph>
     <Paragraph />
   </Root>
 );

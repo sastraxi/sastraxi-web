@@ -23,7 +23,19 @@ const Projects = () => (
         <a href="https://sendy.video">website</a>
         {', '}
         <a href="https://github.com/sastraxi/sendy-video">github</a>
-        ) - currently experiencing slow cold start times
+        )
+        <ul>
+          <li>
+            N.B. first request
+            {' '}
+            <a href="https://github.com/sastraxi/sendy-video/issues/1">will be slow</a>
+            {' '}
+            due to lambda cold boot
+          </li>
+        </ul>
+      </li>
+      <li>
+        elefant - social coding in your IDE (wip)
       </li>
     </ul>
   </Container>
