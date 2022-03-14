@@ -16,7 +16,7 @@ const IndexPage = () => (
   <Root>
     <Badge size="160px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
-    <Subheading>Software architect, entrepreneur, mentor</Subheading>
+    <Subheading>Software architect, problem solver, mentor</Subheading>
     <Links>
       <Link to="/resume">Résumé</Link>
       <a href="mailto:sastraxi+weblinks@gmail.com">Email</a>

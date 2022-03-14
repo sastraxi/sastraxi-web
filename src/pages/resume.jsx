@@ -51,7 +51,7 @@ const IndexPage = () => (
     <Badge size="160px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>
-      Software architect, entrepreneur, mentor
+      Software architect, problem solver, mentor
     </Subheading>
     <ContactDetails />
     <Links>
