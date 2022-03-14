@@ -37,7 +37,7 @@ const IndexPage = () => (
       @&nbsp;
       <a href="https://lyricfind.com">LyricFind</a>
       . Techstars Music 2017&nbsp;
-      <a href="https://www.techstars.com/content/accelerators/announcing-techstars-music-2017-one-goes-11/">
+      <a href="https://medium.com/techstars/announcing-techstars-music-2017-this-one-goes-to-11-3dc0d8b6f88f">
         alumnus
       </a>
       .

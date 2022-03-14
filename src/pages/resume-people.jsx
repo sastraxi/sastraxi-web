@@ -157,7 +157,7 @@ const IndexPage = () => (
         and StubHub with a consumer-centric, demand-side approach to ticketing:
         ticket reservations. We iterated on this approach for a year and a half
         (including participating in the&nbsp;
-        <a href="https://www.techstars.com/content/accelerators/announcing-techstars-music-2017-one-goes-11/">
+        <a href="https://medium.com/techstars/announcing-techstars-music-2017-this-one-goes-to-11-3dc0d8b6f88f">
           Techstars Music 2017 accelerator
         </a>
         &nbsp;in Los Angeles)
