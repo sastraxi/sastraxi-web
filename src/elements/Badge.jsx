@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { BRAND_COLOUR } from './global';
 
+// https://stackoverflow.com/questions/66835241/gatsby-image-plugin-not-displaying-properly-on-ios-devices
 const BadgeOuter = styled.span`
   display: inline-block;
   width: ${(props) => props.size};
@@ -12,6 +13,8 @@ const BadgeOuter = styled.span`
   padding: 0;
   overflow: hidden;
   border: 3px solid ${BRAND_COLOUR};
+  position: relative;
+  z-index: 0;
 
   @media print {
     display: none;
