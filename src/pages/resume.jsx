@@ -17,6 +17,10 @@ import ContactDetails from '../components/ContactDetails';
 import { BRAND_COLOUR } from '../elements/global';
 import Projects from '../components/Projects';
 
+const Together = styled.section`
+  page-break-inside: avoid;
+`;
+
 const Company = styled.div`
   font-weight: bold;
 `;
@@ -40,10 +44,6 @@ const Duties = styled.div`
     font-size: 80%;
     margin-right: 2em;
   }
-`;
-
-const Together = styled.div`
-  page-break-inside: avoid;
 `;
 
 const IndexPage = () => (
@@ -162,7 +162,7 @@ const IndexPage = () => (
         <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
           right technologies
         </a>
-        , makin the right choices regarding &quot;technical debt&quot;, and making sure our
+        , making the right choices regarding &quot;technical debt&quot;, and making sure our
         products were deployed properly and in an automated fashion via Kubernetes.
       </Duties>
     </Paragraph>
