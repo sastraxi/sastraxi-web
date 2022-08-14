@@ -12,6 +12,7 @@ This article aims to guide the reader through building a backend application wit
 * Schema-first design
 * Single source of truth
 * Avoid reinventing the wheel
+* High performance
 
 ## Initial setup
 The most straightforward and powerful way to use Hasura is to create an HTTP server using your preferred programming language and paradigm. This server will cooperate with Hasura, providing the custom logic that we extends the basic CRUD functionality of our GraphQL appliance. 
@@ -53,10 +54,20 @@ In some cases, the expressivity of the Hasura permissions system will not be eno
 
 In these cases, we can tell Hasura to block access to built-in queries and mutations from regular clients by marking them as backend-only. These “documents” can then only be used by Hasura sessions that were made using the “admin secret” and not regular clients passing in a JWT or cookie.
 
+In addition, you may want to create an action to avoid a roundtrip between the frontend and backend in case you need to run a mutation after another query (or mutation), but do not need 
 
-
-## Thinking in events
+## The Hasura event system
 The right way to do a lot of things when using Hasura as the main interface for your backend app is to think about things in terms of events.
+
+## GraphQL code generation
+This section relates less to Hasura specifically and more to GraphQL as a whole.
+
+- pre-defined queries at "compile time"
+- typed document node
+- urql
+- if you might need to 
 
 ## Allowlists and rate limiting
 Blah blah blah
+
+

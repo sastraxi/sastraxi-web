@@ -48,10 +48,10 @@ const Inner = styled.div`
   }
 `;
 
-const Wrapper = ({ children }) => (
+const Wrapper = ({ children, title }) => (
   <>
     <Helmet
-      title="Cameron Gorrie | sastraxi.com"
+      title={`${title} | sastraxi.com`}
       meta={[
         { name: 'description', content: 'The portfolio / resume website for Cameron Gorrie' },
         { name: 'keywords', content: 'resume, cv, portfolio, dev, gatsby' },
@@ -69,6 +69,11 @@ const Wrapper = ({ children }) => (
 
 Wrapper.propTypes = {
   children: PropTypes.node.isRequired,
+  title: PropTypes.string,
+};
+
+Wrapper.defaultProps = {
+  title: 'Cameron Gorrie',
 };
 
 export default Wrapper;

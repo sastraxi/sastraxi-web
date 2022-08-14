@@ -13,7 +13,7 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <Root>
+    <Root title={frontmatter.title}>
       <Badge size="160px" image={<Cam />} />
       <Heading>{frontmatter.title}</Heading>
       <Subheading>{frontmatter.date}</Subheading>
