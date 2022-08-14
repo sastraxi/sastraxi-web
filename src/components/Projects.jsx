@@ -24,21 +24,12 @@ const Projects = () => (
         <th>sendy video</th>
         <td>
           collect video greetings from your friends (
-          <a href="https://sendy.video">website</a>
-          {', '}
           <a href="https://github.com/sastraxi/sendy-video">github</a>
           )
-          <Warning>
-            N.B. first request
-            {' '}
-            <a href="https://github.com/sastraxi/sendy-video/issues/1">may be slow</a>
-            {' '}
-            due to lambda cold boot
-          </Warning>
         </td>
       </tr>
       <tr>
-        <th>elefant</th>
+        <th>colleq</th>
         <td>
           social coding in your IDE (wip)
         </td>
@@ -48,26 +39,3 @@ const Projects = () => (
 );
 
 export default Projects;
-
-// const Projects = () => (
-//   <Container>
-//     <ul>
-//       <li>
-//         <b>pgsh</b>
-//         :  (
-
-//         )
-//       </li>
-//       <li>
-//
-
-//       </li>
-//       <li>
-//         <b>elefant</b>
-//         : social coding in your IDE (wip)
-//       </li>
-//     </ul>
-//   </Container>
-// );
-
-// export default Projects;
