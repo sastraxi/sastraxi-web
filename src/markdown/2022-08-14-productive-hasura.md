@@ -32,7 +32,14 @@ Creating an auth endpoint on your server is a powerful way to authenticate users
 It’s probably best to just call the x-hasura-role “user”.
 
 > ### Aside: queries and mutations as “admin”
-> You’ll notice there is a default admin role on each table. Queries made through the console 
+> You’ll notice there is a default admin role on each table. Queries made through the console
+> will use the hasura admin secret by default, if you have secured your installation. You can
+> see the secret that's been passed to `hasura console` being passed through to the GraphQL
+> endpoint in the Query tab of the console.
+>
+> Let's share this secret with our companion backend app so it can implement
+> lower-level database logic without having to dive down to raw SQL queries. See
+> [backend-only mutations](#actions-and-backend-only-mutations) for more information.
 
 ## Authorization (read)
 Basically, start by creating permissions for the “user” role on each table. A good practice is to first create this role for each table with a deny all approach. (TODO: can Hasura do this for us?). 
@@ -52,16 +59,23 @@ In these cases, we can tell Hasura to block access to built-in queries and mutat
 
 In addition, you may want to create an action to avoid a roundtrip between the frontend and backend in case you need to run a mutation after another query (or mutation), but do not need 
 
-## The Hasura event system
-The right way to do a lot of things when using Hasura as the main interface for your backend app is to think about things in terms of events.
+## Event triggers
+Hasura can notify you via HTTP(s) callback when a certain value has changed in the underlying (postgres) store.
+These configured callbacks are called _event triggers_ and you might even choose to [design your whole application](https://3factor.app/)
+around them.
+
+For example, many businesses execute a ton of logic after central events in a user journey: signup, activation, referral, et cetera.
+Rather than having these "post-effects" defined and executed alongside the user signup and storage logic, Hasura lets us decouple
+them. This is helpful for e.g. making sure failures in email delivery can never result in failures to store new user details in our database.
+
 
 ## GraphQL code generation
 This section relates less to Hasura specifically and more to GraphQL as a whole.
 
-- pre-defined queries at "compile time"
-- typed document node
-- urql
-- if you might need to 
+1. Each frontend pre-defines query documents in `.graphql` files.
+2. Use `graphql-code-generator` to generate typed `DocumentNode` typescript definitions.
+3. Use these with urql (or your favourite GraphQL client)
+4.
 
 ## Allowlists and rate limiting
 Blah blah blah
