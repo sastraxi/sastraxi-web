@@ -64,20 +64,34 @@ const Article = styled.div`
     position: absolute;
     background: ${BRAND_COLOUR_A25};
   }
+  @media (max-width: 480px) {
+    blockquote {
+      border-left-width: 1.5em;
+    }
+  }
 
   blockquote > :first-child {
     margin-top: 0.7em;
   }
+
 
   code {
     background: ${BRAND_COLOUR};
     color: white;
     font-family: monospace;
     font-size: 1.1em;
-    padding: 0.15em 0.6em;
+    padding: 0.6em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
     line-height: 0.8em;
     border-radius: 3px;
-    box-shadow: inset -0.1em -0.1em 0 rgba(255, 255, 255, 0.3);
+    border: 0.15em solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+    border-left: none;
+  }
+
+  @media (max-width: 480px) {
+    text-align: left;
   }
 
 `;
