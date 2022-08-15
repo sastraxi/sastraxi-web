@@ -5,7 +5,8 @@ const Subheading = styled.h2`
   margin-top: 5px;
   margin-bottom: 20px;
   line-height: 140%;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  font-weight: 500;
 `;
 
 export default Subheading;

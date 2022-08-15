@@ -19,6 +19,8 @@ const Inner = styled.div`
   border-right: 5px solid ${BRAND_COLOUR};
   margin: 0 auto;
 
+  min-height: 140px;
+
   a {
     color: ${BRAND_COLOUR};
     @media print {

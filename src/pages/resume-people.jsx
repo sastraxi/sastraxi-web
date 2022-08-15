@@ -42,9 +42,9 @@ const Duties = styled.div`
   }
 `;
 
-const IndexPage = () => (
+const ResumePeople = () => (
   <Root>
-    <Badge size="160px" image={<Cam />} />
+    <Badge size="120px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>
       Software architect, problem solver, mentor
@@ -262,4 +262,4 @@ const IndexPage = () => (
   </Root>
 );
 
-export default IndexPage;
+export default ResumePeople;

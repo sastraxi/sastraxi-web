@@ -14,17 +14,18 @@ import Projects from '../components/Projects';
 
 const IndexPage = () => (
   <Root>
-    <Badge size="160px" image={<Cam />} />
+    <Badge size="120px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>Software architect, problem solver, mentor</Subheading>
     <Links>
       <Link to="/resume">Résumé</Link>
+      <Link to="/blog">Blog</Link>
       <a href="mailto:sastraxi+weblinks@gmail.com">Email</a>
       <a href="https://github.com/sastraxi">Github</a>
       <a href="https://www.linkedin.com/in/camerongorrie/">Linkedin</a>
     </Links>
     <Paragraph>
-      Director of Engineering @&nbsp;
+      Staff developer @&nbsp;
       <a href="https://tophat.com">Top Hat</a>
       . Formerly a mentor / instructor
       @&nbsp;
@@ -75,8 +76,8 @@ const IndexPage = () => (
     <Paragraph>
       In April 2019, I joined&nbsp;
       <a href="https://tophat.com/">Top Hat</a>
-      &nbsp;and currently serve the business as a Director of Engineering. See
-      my
+      &nbsp;and served the business as a Director of Engineering for three years
+      before transitioning to a Staff role. See my
       {' '}
       <Link to="/resume">CV</Link>
       {' '}

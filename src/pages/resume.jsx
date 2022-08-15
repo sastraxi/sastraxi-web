@@ -46,9 +46,9 @@ const Duties = styled.div`
   }
 `;
 
-const IndexPage = () => (
+const Resume = () => (
   <Root>
-    <Badge size="160px" image={<Cam />} />
+    <Badge size="120px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>
       Software architect, problem solver, mentor
@@ -63,7 +63,7 @@ const IndexPage = () => (
     <Paragraph>
       <Company>
         <a href="https://tophat.com">Top Hat</a>
-        &nbsp;(Director of Engineering, staff IC)
+        &nbsp;(Director of Engineering, Staff IC)
       </Company>
       <Date>Apr 2019 to present</Date>
       <Duties>
@@ -274,4 +274,4 @@ const IndexPage = () => (
   </Root>
 );
 
-export default IndexPage;
+export default Resume;
