@@ -94,6 +94,22 @@ const Article = styled.div`
     text-align: left;
   }
 
+  & > div > pre {
+    margin-left: -3em;
+    margin-right: -4.2em;
+
+  }
+  & > div > pre > code {
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 0.4em solid rgba(255, 255, 255, 0.8);
+    display: block;
+    padding: 2em 3.6em;
+    line-height: 1.6em;
+  }
+
 `;
+
+// TODO: https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/?=syntax
 
 export default Article;

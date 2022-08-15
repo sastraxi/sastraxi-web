@@ -68,6 +68,19 @@ For example, many businesses execute a ton of logic after central events in a us
 Rather than having these "post-effects" defined and executed alongside the user signup and storage logic, Hasura lets us decouple
 them. This is helpful for e.g. making sure failures in email delivery can never result in failures to store new user details in our database.
 
+```graphql
+fragment someObjectFragment on SomeObject {
+    id
+    name
+    isSuspect
+}
+query MyQuery(a: Int!) {
+    someObjectByPk(id: a) {
+        ..someObjectFragment
+    }
+}
+```
+
 
 ## GraphQL code generation
 This section relates less to Hasura specifically and more to GraphQL as a whole.
