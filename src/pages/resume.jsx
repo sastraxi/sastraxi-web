@@ -77,8 +77,8 @@ const Resume = () => (
         <b>In 2019</b>
         , I designed (via RFC) and drove the implementation of an &quot;ABAC&quot;
         authorization service that provides the role flexibility our institutional
-        partners had been asking for. This service has enabled several features that
-        shipped in the 
+        partners had been asking for. This service has enabled several new features
+        that helped us sell to institutions rather than individual professors.
       </Duties>
       <Duties>
         <b>In 2020</b>
