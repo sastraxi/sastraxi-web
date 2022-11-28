@@ -68,18 +68,17 @@ const Resume = () => (
       <Date>Apr 2019 to present</Date>
       <Duties>
         As part of the leadership team of the Product &amp; Engineering department,
-        my duties have been diverse. In addition to the following technical experiences
-        I&apos;ve spent my time mentoring ICs, coaching team and technology leads,
-        designing software architecture and documentation, (re-)building processes,
+        my duties have been diverse. In addition to the following selected items
+        I spend my time mentoring ICs, coaching team and technology leads, designing
+        software architecture and documentation, (re-)building processes,
         and leading group sessions (such as premortems and design jams).
       </Duties>
       <Duties>
         <b>In 2019</b>
-        , I flagged the need for, designed, gained alignment (via an RFC process)
-        and drove the implementation of a new (&quot;ABAC&quot;) authorization
-        service that would provide the role flexibility our institutional partners
-        were asking for. This service is now in its final phase of roll-out and has
-        enabled several features that shipped in 2021 (and will ship in 2022).
+        , I designed (via RFC) and drove the implementation of an &quot;ABAC&quot;
+        authorization service that provides the role flexibility our institutional
+        partners had been asking for. This service has enabled several features that
+        shipped in the 
       </Duties>
       <Duties>
         <b>In 2020</b>
@@ -104,19 +103,15 @@ const Resume = () => (
       </Duties>
       <Duties>
         <b>In 2022</b>
-        , I continued my frontend focus while also supporting a number of other
-        teams when needs arose. I optimized the (shared) critical boostrap path of our
-        applications, improving many of the core web vitals of our apps by around 15% (P75).
-        I rewrote a (pytest) test harness that used sqlite to use postgresql, for parity
-        reasons as well as to allow us to test new dialect-specific code, while keeping
-        the test suite extremely fast and improving UX by making it work in all sorts of
-        dockerized/non-docker situations. I discovered and fixed many bugs in our frontend
-        shared infrastructure, reducing bundle size for all apps by ~1.5mb. I participated
-        in a &quot;tech debt&quot; removal strike team during our hackathon, retiring much
-        of the older alt.js code in favour of our
-        {' '}
-        <a href="https://github.com/tophat/dont-waste-your-ducking-time">preferred global state solution</a>
-        .
+        , I continued my frontend focus on the staff engineering team while supporting 5+ other
+        (product) teams. I optimized the (shared) critical boostrap path of our webapps,
+        improving many of the core web vitals of our apps by ~17% (P75).
+        I rewrote a (pytest) test harness that used sqlite to use postgresql (for prod parity)
+        while improving DX. I discovered and fixed many bugs in our frontend
+        shared infrastructure, reducing bundle size for all apps by about 30%.
+        I co-lead two "tiger" teams, bringing together domain experts to reduce cognitive
+        overhead in our frontend code and migrate to a new source of truth for course data,
+        developing a deep understanding (and opinions) in the react state management space.
       </Duties>
     </Paragraph>
     <Paragraph>
