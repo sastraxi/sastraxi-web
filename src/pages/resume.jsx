@@ -63,7 +63,7 @@ const Resume = () => (
     <Paragraph>
       <Company>
         <a href="https://tophat.com">Top Hat</a>
-        &nbsp;(Director of Engineering, Staff IC)
+        &nbsp;(Director of Engineering / Principal Developer)
       </Company>
       <Date>Apr 2019 to present</Date>
       <Duties>
