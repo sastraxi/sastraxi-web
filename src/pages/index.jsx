@@ -47,7 +47,7 @@ const IndexPage = () => (
     </Paragraph>
     <Paragraph>
       I love to learn, and I love solving problems.&nbsp;
-      I am currently open to remote opportunities.
+      I live in Toronto, Ontario and am currently open to remote opportunities.
     </Paragraph>
     <SectionHeader>How I work</SectionHeader>
     <Paragraph>
