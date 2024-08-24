@@ -12,20 +12,22 @@ const SKILL_HEADERS = [
 
 const SKILLS = {
   frontend: [
-    'React',
-    'Gatsby',
-    'Webpack',
-    'GraphQL (Apollo, urql)',
     'Typescript',
-    'Webpack / Babel',
-    'styled-components',
+    'React',
+    'react-query',
+    'pnpm',
+    'tailwind',
+    'vite',
+    'GraphQL (Apollo, urql)',
     'performance profiling',
   ],
   backend: [
     'Node.js',
+    'deno',
     'Java',
     'Python',
     'PostgreSQL',
+    'Snowflake',
     'MySQL',
     'Prisma',
     'Graphile',
@@ -36,22 +38,21 @@ const SKILLS = {
   product: [
     'Jira',
     'Confluence',
-    'Trello',
     'Productboard',
   ],
   devops: [
-    '*nix proficiency',
-    'Ansible',
+    'Linux/BSD',
     'Docker',
     'Kubernetes',
-    'Google Cloud Platform',
+    'AWS/GCP',
     'Netlify',
     'Heroku',
   ],
   testing: [
+    'pytest',
     'Jest',
-    'JUnit',
-    'Selenium',
+    'react-testing-library',
+    'Playwright',
     'Cypress',
   ],
   ai: [
@@ -59,6 +60,8 @@ const SKILLS = {
     'scikit-learn',
     'NumPY',
     'NLTK',
+    'RAG',
+    'Snowflake Cortex',
   ],
 };
 

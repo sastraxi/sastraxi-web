@@ -51,21 +51,49 @@ const Resume = () => (
     <Badge size="120px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
     <Subheading>
-      Software architect, problem solver, mentor
+      Software architect, leader, mentor, advocate
     </Subheading>
     <ContactDetails />
     <Links>
-      <Link to="/">Back to the first page</Link>
+      <Link to="/">Back to the home page</Link>
     </Links>
     <SectionHeader>
       Selected work experience
     </SectionHeader>
     <Paragraph>
       <Company>
+        <a href="https://snowflake.com">Snowflake</a>
+        &nbsp;(Developer Experience)
+      </Company>
+      <Date>March 2023 to Present</Date>
+      <Duties>
+        I have been leading the vision and implementation for
+        the local development experience of building&nbsp;
+        <a href="https://www.snowflake.com/en/data-cloud/workloads/applications/native-apps/">Native Apps</a>
+        &nbsp;inside the Snowflake ecosystem. We&apos;ve built this experience inside&nbsp;
+        <a href="https://docs.snowflake.com/en/developer-guide/snowflake-cli-v2/index">Snowflake CLI</a>
+        &nbsp;(Python) as well as making many improvements to the underlying framework (Java / FoundationDB).
+        This work has reduced the time-to-first-app deployment from hours to minutes.
+      </Duties>
+      <Duties>
+        This has involved writing functional and design specifications, moving them through the review
+        process (including presenting to the CTO), interviewing and onboarding new team members, building workshops
+        to spread knowledge internally, presenting to management and area architects, creating public-facing
+        tutorials and examples, collaborating with teams in remote time zones, ideating and creating applications
+        for our BUILD and Summit conferences, collaborating with other Snowflake teams as a domain expert,
+        and doing away team work when dependency teams were not able to commit.
+      </Duties>
+      <Duties>
+        In addition, I was acting Product Manager for our team until May 2024 and continue to maintain
+        a laser focus on customer outcomes.
+      </Duties>
+    </Paragraph>
+    <Paragraph>
+      <Company>
         <a href="https://tophat.com">Top Hat</a>
         &nbsp;(Director of Engineering / Principal Developer)
       </Company>
-      <Date>Apr 2019 to present</Date>
+      <Date>April 2019 to February 2023</Date>
       <Duties>
         As part of the leadership team of the Product &amp; Engineering department,
         my duties have been diverse. In addition to the following selected items
@@ -109,7 +137,7 @@ const Resume = () => (
         I rewrote a (pytest) test harness that used sqlite to use postgresql (for prod parity)
         while improving DX. I discovered and fixed many bugs in our frontend
         shared infrastructure, reducing bundle size for all apps by about 30%.
-        I co-lead two "tiger" teams, bringing together domain experts to reduce cognitive
+        I lead two "tiger" teams, bringing together domain experts to reduce cognitive
         overhead in our frontend code and migrate to a new source of truth for course data,
         developing a deep understanding (and opinions) in the react state management space.
       </Duties>
@@ -117,9 +145,9 @@ const Resume = () => (
     <Paragraph>
       <Company>
         <a href="https://lighthouselabs.ca">Lighthouse Labs</a>
-        &nbsp;(Mentor, lecturer)
+        &nbsp;(Mentor / Lecturer)
       </Company>
-      <Date>May 2018 to Apr 2019</Date>
+      <Date>May 2018 to April 2019</Date>
       <Duties>
         Students in the web development immersive program at Lighthouse
         embark on a 10 week program to learn how to build software using
@@ -146,33 +174,18 @@ const Resume = () => (
           Techstars Music 2017 accelerator
         </a>
         &nbsp;in Los Angeles)
-        before pivoting and switching to a B2B event concierge approach.
+        before pivoting and switching to a B2B event concierge approach. 
       </Duties>
       <Duties>
-        Management responsibilities included managing the development team, splitting
-        product management duties with our design lead, performing user interviews
-        and crafting narratives, sprint planning, and working with my co-founders
-        to craft company vision. In addition, I led development efforts, building
-        proof-of-concept systems, choosing the&nbsp;
-        <a href="https://medium.com/@sastraxi/authenticated-and-stitched-schemas-with-postgraphile-passport-and-stripe-a51490a858a2">
-          right technologies
-        </a>
-        , making the right choices regarding &quot;technical debt&quot;, and making sure our
-        products were deployed properly and in an automated fashion via Kubernetes.
+        We were acquired by <a href="https://triller.co/">Triller</a>.
       </Duties>
     </Paragraph>
     <Paragraph>
       <Company>
         <a href="https://streetcontxt.com">Street Contxt</a>
-        &nbsp;(Software developer)
+        &nbsp;(Software Developer)
       </Company>
       <Date>March to September 2016</Date>
-      <Duties>
-        Part of a development team responsible for maintaining and adding
-        features to a research exchange/marketplace web application aimed
-        towards investment banks. Technologies used include Scala/Java, Solr,
-        PostgreSQL, Apache Spark, Webpack, React, Knockout.
-      </Duties>
       <Duties>
         The majority of my time here was spent optimizing our search infrastructure
         as well as ensuring that our emails were not flagged as spam or low-quality.
@@ -181,15 +194,9 @@ const Resume = () => (
     <Paragraph>
       <Company>
         <a href="https://lyricfind.com">LyricFind</a>
-        &nbsp;(Team lead)
+        &nbsp;(Team Lead)
       </Company>
       <Date>June 2012 to March 2016</Date>
-      <Duties>
-        Project manager/software team lead (of 8) for a music lyric
-        licensing provider. Successfully delivered a project to rebuild
-        our backend system (Spring MVC/MariaDB/Solr), precipitated by a
-        fundamental business direction shift.
-      </Duties>
       <Duties>
         Management responsibilities
         included interviewing/hiring full-time and co-op developers,

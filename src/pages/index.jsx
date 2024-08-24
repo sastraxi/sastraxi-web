@@ -16,18 +16,20 @@ const IndexPage = () => (
   <Root>
     <Badge size="120px" image={<Cam />} />
     <Heading>Cameron Gorrie</Heading>
-    <Subheading>Software architect, problem solver, mentor</Subheading>
+    <Subheading>Software architect, leader, mentor, advocate</Subheading>
     <Links>
       <Link to="/resume">Résumé</Link>
       <Link to="/blog">Blog</Link>
       <a href="mailto:sastraxi+weblinks@gmail.com">Email</a>
       <a href="https://github.com/sastraxi">Github</a>
+      <a href="https://github.com/sfc-gh-cgorrie">Github (Snowflake)</a>
       <a href="https://www.linkedin.com/in/camerongorrie/">Linkedin</a>
     </Links>
     <Paragraph>
-      Staff developer @&nbsp;
+      Developer experience @ <a href="https://www.snowflake.com/en/">Snowflake</a>
+      . Formerly Principal dev @&nbsp;
       <a href="https://tophat.com">Top Hat</a>
-      . Formerly a mentor / instructor
+      , mentor / instructor
       @&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
       , CTO @&nbsp;
@@ -45,8 +47,7 @@ const IndexPage = () => (
     </Paragraph>
     <Paragraph>
       I love to learn, and I love solving problems.&nbsp;
-      <a href="mailto:sastraxi+webcta@gmail.com">Get in touch</a>
-      .
+      I am currently open to remote opportunities.
     </Paragraph>
     <SectionHeader>How I work</SectionHeader>
     <Paragraph>
@@ -59,49 +60,31 @@ const IndexPage = () => (
     <Paragraph>
       I solve tech, product, and usability problems by breaking them down and
       approaching them from several different perspectives simultaneously.
-      Sometimes it&apos;s better to build a quick proof-of-concept or even a
-      landing page to capture interest than to build the new feature outright.
-      Other times, it&apos;s a matter of weighing technical debt against the
+      Sometimes it&apos;s better to build something quick, and sometimes it&apos;s
+      worth taking the time to get it completely right.
+      Generally, it&apos;s a matter of weighing technical debt against the
       business use case, coming up with the simplest robust design, reducing
       scope where appropriate, and making sure the team moves forward together
-      while communicating simply (and often asynchronously).
+      while keeping mental models aligned.
     </Paragraph>
     <Paragraph>
       I have used this methodology to successfully deliver many products within
       reasonable timeframes and budgets, all under various degrees of
-      uncertainty. I believe that there are many correct approaches to building
-      software, and mine is just one of them.
+      uncertainty&mdash;sometimes extreme. There are many correct approaches
+      to building software, and we owe it to the problem to choose the right one.
     </Paragraph>
     <SectionHeader>What I&apos;m up to</SectionHeader>
     <Paragraph>
-      In April 2019, I joined&nbsp;
-      <a href="https://tophat.com/">Top Hat</a>
-      &nbsp;and served the business as a Director of Engineering for three years
-      before transitioning to a Staff role. See my
-      {' '}
-      <Link to="/resume">CV</Link>
-      {' '}
-      for more information about what I&apos;ve
-      been up to there.
+      Since March 2023, I've been working at&nbsp;
+      <a href="https://snowflake.com">Snowflake</a>
+      , building a local development experience for the&nbsp;
+      <a href="https://www.snowflake.com/en/data-cloud/workloads/applications/native-apps/">Native Apps Framework</a>
+      , which has involved significant contribution to&nbsp;
+      <a href="https://docs.snowflake.com/en/developer-guide/snowflake-cli-v2/index">Snowflake CLI</a>
+      &nbsp;as well as many improvements to the underlying framework.
     </Paragraph>
     <Paragraph>
-      I have been mentoring students at&nbsp;
-      <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
-      &nbsp;for a few months now, and it has been deeply satisfying witnessing
-      their journeys. There are these moments when their eyes light up and they
-      make a hundred connections at once in their brains about programming and
-      for that brief second it all makes sense. I love that feeling myself, and
-      I love helping others get there.
-    </Paragraph>
-    <Paragraph>
-      I am super proud of the work we&apos;ve done at&nbsp;
-      <a href="https://robin.live">Robin Media</a>
-      , where I led the development
-      of our initiatives up until September 2018. I also led a 2-year rewrite of
-      the&nbsp;
-      <a href="https://lyricfind.com">LyricFind</a>
-      &nbsp;backend systems from 2014-2016. I also took on a good amount of the
-      product and project management tasks for these efforts.
+      See my <a href="https://medium.com/@snowflake.cam/c108b0e51fc9">blog post</a> that outlines some of this work.
     </Paragraph>
     <SectionHeader>Selected projects</SectionHeader>
     <Projects />
@@ -109,9 +92,7 @@ const IndexPage = () => (
     <Paragraph>
       <a href="https://github.com/sastraxi/sastraxi-web">This site</a>
       &nbsp;was built using&nbsp;
-      <a href="https://gatsbyjs.org">Gatsby</a>
-      . While it has its hiccups, I&apos;ve found it simple to keep up-to-date
-      while providing high performance and accessibility.
+      <a href="https://gatsbyjs.org">Gatsby</a>.
     </Paragraph>
     <Paragraph>
       Here is an example of my&nbsp;
@@ -127,8 +108,7 @@ const IndexPage = () => (
       .
     </Paragraph>
     <Paragraph>
-      I have participated in a number of bands as a songwriter, bassist, and/or
-      vocalist. Check out
+      I record and perform music regularly. See
       {' '}
       <a href="https://myfavouritefilter.bandcamp.com/">
         My Favourite Filter on Bandcamp
