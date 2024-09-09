@@ -24,14 +24,14 @@ const Projects = () => (
         <th>jam-shuffle</th>
         <td>
             Break through creative block. Jam with your friends (
-              <a href="jam-shuffle.pages.dev">jam-shuffle</a>
+              <a href="https://jam-shuffle.pages.dev">jam-shuffle</a>
             )
         </td>
       </tr>
       <tr>
         <th>midi-viewer</th>
         <td>
-          Connect a MIDI keyboard to visualize notes, chords, and detect key / mode (
+          Note, chord, and mode visualizer for MIDI keyboards (
             <a href="https://midi-viewer.pages.dev">midi-viewer</a>
           )
         </td>
