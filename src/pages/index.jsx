@@ -29,11 +29,11 @@ const IndexPage = () => (
       Developer experience @ <a href="https://www.snowflake.com/en/">Snowflake</a>
       . Formerly Principal dev @&nbsp;
       <a href="https://tophat.com">Top Hat</a>
+      , CTO @&nbsp;
+      <a href="https://triller.co">Robin Media (acq.)</a>
       , mentor / instructor
       @&nbsp;
       <a href="https://www.lighthouselabs.ca">Lighthouse Labs</a>
-      , CTO @&nbsp;
-      <a href="https://robin.live">Robin Media</a>
       , dev @&nbsp;
       <a href="https://streetcontxt.com">Street Contxt</a>
       , software team lead
