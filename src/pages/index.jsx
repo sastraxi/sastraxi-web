@@ -84,7 +84,7 @@ const IndexPage = () => (
       &nbsp;as well as many improvements to the underlying framework.
     </Paragraph>
     <Paragraph>
-      See my <a href="https://medium.com/@snowflake.cam/c108b0e51fc9">blog post</a> that outlines some of this work.
+      See my <a href="https://medium.com/snowflake/zero-to-one-with-snowflake-native-apps-c108b0e51fc9">blog post</a> that outlines some of this work.
     </Paragraph>
     <SectionHeader>Selected projects</SectionHeader>
     <Projects />

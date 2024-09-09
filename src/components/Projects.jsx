@@ -21,17 +21,27 @@ const Projects = () => (
         </td>
       </tr>
       <tr>
+        <th>jam-shuffle</th>
+        <td>
+            Break through creative block. Jam with your friends (
+              <a href="jam-shuffle.pages.dev">jam-shuffle</a>
+            )
+        </td>
+      </tr>
+      <tr>
+        <th>midi-viewer</th>
+        <td>
+          Connect a MIDI keyboard to visualize notes, chords, and detect key / mode (
+            <a href="https://midi-viewer.pages.dev">midi-viewer</a>
+          )
+        </td>
+      </tr>
+      <tr>
         <th>sendy video</th>
         <td>
           collect video greetings from your friends (
           <a href="https://github.com/sastraxi/sendy-video">github</a>
           )
-        </td>
-      </tr>
-      <tr>
-        <th>colleq</th>
-        <td>
-          social coding in your IDE (wip)
         </td>
       </tr>
     </tbody>
