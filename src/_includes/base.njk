@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description or 'Cameron Gorrie — software architect, musician, leader, advocate' }}" />
+    <meta name="author" content="Cameron Gorrie" />
+    <link rel="icon" href="/images/icon.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead">
+      <canvas id="hero" class="hero" aria-hidden="true" width="900" height="160"></canvas>
+      <pre class="hero-fallback" aria-hidden="true">{% include "hero-banner.njk" %}</pre>
+
+      <div class="identity">
+        <h1>Cameron Gorrie</h1>
+        <p class="tagline">software architect, musician, leader, advocate</p>
+        <nav aria-label="Primary">
+          {% for link in nav %}
+            <a href="{{ link.href }}"{% if link.external %} rel="noopener"{% endif %}>{{ link.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer" style="text-align: center">
+      <p>
+        <span class="prompt">$</span> built with
+        <a href="https://www.11ty.dev/" rel="noopener">eleventy</a> &middot;
+        no trackers &middot; <a href="/resume/">resume</a> &middot;
+        <a href="https://github.com/sastraxi/sastraxi-web" rel="noopener">source</a>
+      </p>
+    </footer>
+
+    <script src="/js/hero.js" defer></script>
+  </body>
+</html>
