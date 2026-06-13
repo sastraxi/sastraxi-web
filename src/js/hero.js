@@ -9,21 +9,26 @@
      When the field nearly dies out it reseeds, so the message keeps reforming.
 
    Decorative + aria-hidden; the static hexdump in the markup is the no-JS
-   fallback. Reduced motion runs the same animation at 0.25x speed. */
+   fallback. Under prefers-reduced-motion we don't animate at all — the static
+   hexdump stays. */
 (function () {
   "use strict";
 
   var canvas = document.getElementById("hero");
   if (!canvas || !canvas.getContext) return;
 
+  // Honour reduced motion: leave the static hexdump fallback in place.
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
+    return;
+  }
+
   document.body.classList.add("js-hero");
   var ctx = canvas.getContext("2d");
 
-  var reduce =
-    window.matchMedia &&
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  var GEN_PER_SEC = reduce ? 0.75 : 3; // reduced motion = 0.25x of 3/sec
+  var GEN_PER_SEC = 0.5;
   var STEP_MS = 1000 / GEN_PER_SEC;
 
   var FONT = 13; // px (logical)
@@ -97,7 +102,7 @@
 
     rows = Math.max(4, Math.floor(cssH / LINE));
     // line = leftpad(1) + offset + 2 spaces + hex(3c-1) + " |" + ascii(c) + "|"
-    cols = Math.max(4, Math.floor((cssW / charW - OFFSET_DIGITS - 7) / 4));
+    cols = Math.max(4, Math.floor((cssW / charW - OFFSET_DIGITS - 10) / 4));
 
     topPad = Math.max(0, (cssH - rows * LINE) / 2);
     leftPad = charW;
@@ -133,6 +138,14 @@
         } else {
           nv = live === 3 ? 144 + (avg & 63) : Math.floor(b * 0.7);
         }
+        // Spontaneous generation: a 00 cell may spark into a random character,
+        // likelier the more 00s surround it (all eight 00 => 10% chance).
+        if (b === 0) {
+          var zeros =
+            (n0 === 0) + (n1 === 0) + (n2 === 0) + (n3 === 0) +
+            (n5 === 0) + (n6 === 0) + (n7 === 0) + (n8 === 0);
+          if (Math.random() < 0.1 * (zeros / 8)) nv = 33 + ((Math.random() * 223) | 0);
+        }
         dst[mid + c] = nv;
         if (nv > 127) alive++;
       }
@@ -150,9 +163,7 @@
 
     var hexX = leftPad + (OFFSET_DIGITS + 2) * charW;
     var hexLen = cols * 3 - 1;
-    var sepX = hexX + (hexLen + 1) * charW;
-    var asciiX = sepX + 2 * charW;
-    var endX = asciiX + cols * charW;
+    var asciiX = hexX + (hexLen + 6) * charW;
 
     for (var r = 0; r < rows; r++) {
       var y = topPad + r * LINE;
@@ -163,8 +174,6 @@
       while (off.length < OFFSET_DIGITS) off = "0" + off;
       ctx.fillStyle = col.dim;
       ctx.fillText(off, leftPad, y);
-      ctx.fillText("|", sepX, y);
-      ctx.fillText("|", endX, y);
 
       // hex + ascii base pass (dim)
       var hexStr = "";

@@ -209,6 +209,10 @@ p {
 /* --- resume blocks ------------------------------------------------------- */
 
 .block {
+  margin-top: 0.75rem;
+}
+
+.block+.block {
   margin-top: 2.25rem;
 }
 
@@ -266,7 +270,7 @@ h2::before {
   margin: 0;
 }
 
-.skills > div {
+.skills>div {
   display: grid;
   grid-template-columns: 8.5rem 1fr;
   gap: 0.75rem;
@@ -274,7 +278,7 @@ h2::before {
   border-top: 1px solid var(--rule);
 }
 
-.skills > div:last-child {
+.skills>div:last-child {
   border-bottom: 1px solid var(--rule);
 }
 
@@ -290,7 +294,7 @@ h2::before {
 }
 
 @media (max-width: 540px) {
-  .skills > div {
+  .skills>div {
     grid-template-columns: 1fr;
     gap: 0.2rem;
   }

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }}</title>
-    <meta name="description" content="{{ description or 'Cameron Gorrie — software architect, leader, mentor, advocate.' }}" />
+    <meta name="description" content="{{ description or 'Cameron Gorrie — software architect, musician, leader, advocate' }}" />
     <meta name="author" content="Cameron Gorrie" />
     <link rel="icon" href="/images/icon.png" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -18,7 +18,7 @@
 
       <div class="identity">
         <h1>Cameron Gorrie</h1>
-        <p class="tagline">Software architect, leader, mentor, advocate.</p>
+        <p class="tagline">software architect, musician, leader, advocate</p>
         <nav aria-label="Primary">
           {% for link in nav %}
             <a href="{{ link.href }}"{% if link.external %} rel="noopener"{% endif %}>{{ link.label }}</a>
@@ -31,11 +31,11 @@
       {{ content | safe }}
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" style="text-align: center">
       <p>
         <span class="prompt">$</span> built with
         <a href="https://www.11ty.dev/" rel="noopener">eleventy</a> &middot;
-        no trackers &middot; <a href="/resume/">Resume</a> &middot;
+        no trackers &middot; <a href="/resume/">resume</a> &middot;
         <a href="https://github.com/sastraxi/sastraxi-web" rel="noopener">source</a>
       </p>
     </footer>
