@@ -147,8 +147,9 @@ main,
 .hero-fallback {
   height: 260px;
   margin: 0 0 1.25rem;
-  font-size: clamp(0.34rem, 1.7vw, 0.72rem);
-  line-height: 1.15;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 17px;
   white-space: pre;
   overflow: hidden;
   color: var(--accent);
