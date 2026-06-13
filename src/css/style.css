@@ -129,7 +129,9 @@ main,
   color: var(--accent);
 }
 
-/* Canvas is the enhanced version; fallback <pre> is hidden once JS runs. */
+/* Canvas is the enhanced version; fallback <pre> is hidden once JS runs.
+   Both elements share the same fixed height so switching between them
+   does not reflow the page. */
 .hero {
   display: none;
 }
@@ -143,7 +145,7 @@ main,
 }
 
 .hero-fallback {
-  height: auto;
+  height: 260px;
   margin: 0 0 1.25rem;
   font-size: clamp(0.34rem, 1.7vw, 0.72rem);
   line-height: 1.15;
