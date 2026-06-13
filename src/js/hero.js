@@ -28,8 +28,10 @@
   document.body.classList.add("js-hero");
   var ctx = canvas.getContext("2d");
 
-  var GEN_PER_SEC = 0.5;
-  var STEP_MS = 1000 / GEN_PER_SEC;
+  var BASE_GEN_PER_SEC = 0.5;
+  var HOVER_MULT = 30;
+  var genPerSec = BASE_GEN_PER_SEC;
+  var STEP_MS = 1000 / genPerSec;
 
   var FONT = 13; // px (logical)
   var LINE = 17; // px line height
@@ -215,6 +217,16 @@
   }
 
   setup();
+
+  canvas.addEventListener("mouseenter", function () {
+    genPerSec = BASE_GEN_PER_SEC * HOVER_MULT;
+    STEP_MS = 1000 / genPerSec;
+  });
+  canvas.addEventListener("mouseleave", function () {
+    genPerSec = BASE_GEN_PER_SEC;
+    STEP_MS = 1000 / genPerSec;
+  });
+
   var rt;
   window.addEventListener("resize", function () {
     clearTimeout(rt);
