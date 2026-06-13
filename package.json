@@ -1,51 +1,20 @@
 {
   "name": "sastraxi-web",
   "description": "Personal website / sastraxi.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Cameron Gorrie <sastraxi@gmail.com>",
-  "dependencies": {
-    "babel-plugin-styled-components": "^2.0.6",
-    "gatsby": "^4.9.3",
-    "gatsby-image": "^2.0.15",
-    "gatsby-plugin-image": "^2.9.1",
-    "gatsby-plugin-manifest": "^4.9.1",
-    "gatsby-plugin-offline": "^5.9.1",
-    "gatsby-plugin-react-helmet": "^5.9.0",
-    "gatsby-plugin-sharp": "^4.9.1",
-    "gatsby-plugin-styled-components": "^5.9.0",
-    "gatsby-remark-autolink-headers": "^5.20.0",
-    "gatsby-source-filesystem": "^4.9.1",
-    "gatsby-transformer-remark": "^5.20.0",
-    "gatsby-transformer-sharp": "^4.9.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^5.3.3"
-  },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
+    "clean": "rm -rf _site"
   },
   "devDependencies": {
-    "eslint": "^8.11.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.29.3",
-    "prettier": "^2.5.1"
+    "@11ty/eleventy": "^3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "url": "https://github.com/sastraxi/sastraxi-web"
+  }
 }

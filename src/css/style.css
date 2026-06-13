@@ -1,0 +1,368 @@
+/* ---------------------------------------------------------------------------
+   sastraxi.com — minimal 1px-line "hacker" theme
+   Dark terminal by default; light via prefers-color-scheme; clean print.
+--------------------------------------------------------------------------- */
+
+:root {
+  --bg: #0a0a0a;
+  --bg-soft: #101010;
+  --fg: #cfcfcf;
+  --fg-dim: #8a8a8a;
+  --accent: #00ff9c;
+  --accent-dim: #0a9c63;
+  --rule: #1f1f1f;
+  --rule-strong: #2c2c2c;
+  --focus: #00ff9c;
+
+  --mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", "SF Mono", Menlo,
+    Consolas, "Liberation Mono", monospace;
+  --measure: 72ch;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fafafa;
+    --bg-soft: #f1f1f1;
+    --fg: #161616;
+    --fg-dim: #5a5a5a;
+    --accent: #0a7a55;
+    --accent-dim: #0a7a55;
+    --rule: #e2e2e2;
+    --rule-strong: #d0d0d0;
+    --focus: #0a7a55;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 1.25rem;
+}
+
+/* --- shared link styling ------------------------------------------------- */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-strong);
+  transition: border-color 0.12s ease, color 0.12s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+a:visited {
+  color: var(--accent-dim);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+strong,
+b {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.prompt {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* --- skip link ----------------------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--bg-soft);
+  color: var(--accent);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--accent);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* --- layout -------------------------------------------------------------- */
+
+.masthead,
+main,
+.site-footer {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* --- masthead / hero ----------------------------------------------------- */
+
+.masthead {
+  padding-top: 2.5rem;
+}
+
+.hero,
+.hero-fallback {
+  display: block;
+  width: 100%;
+  height: 160px;
+  margin: 0 0 1.25rem;
+  color: var(--accent);
+}
+
+/* Canvas is the enhanced version; fallback <pre> is hidden once JS runs. */
+.hero {
+  display: none;
+}
+
+.js-hero .hero {
+  display: block;
+}
+
+.js-hero .hero-fallback {
+  display: none;
+}
+
+.hero-fallback {
+  height: auto;
+  margin: 0 0 1.25rem;
+  font-size: clamp(0.34rem, 1.7vw, 0.72rem);
+  line-height: 1.15;
+  white-space: pre;
+  overflow: hidden;
+  color: var(--accent);
+}
+
+.identity {
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: var(--fg);
+}
+
+.tagline {
+  color: var(--fg-dim);
+  margin: 0.25rem 0 1rem;
+}
+
+nav[aria-label="Primary"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+}
+
+nav[aria-label="Primary"] a {
+  border-bottom: none;
+  color: var(--fg);
+}
+
+nav[aria-label="Primary"] a::before {
+  content: "› ";
+  color: var(--accent);
+}
+
+nav[aria-label="Primary"] a:hover {
+  color: var(--accent);
+}
+
+/* --- main content -------------------------------------------------------- */
+
+main {
+  padding: 2rem 0 1rem;
+}
+
+p {
+  margin: 0 0 1.1rem;
+}
+
+.lede {
+  font-size: 1.05rem;
+  border-left: 1px solid var(--accent-dim);
+  padding-left: 1rem;
+}
+
+/* --- resume blocks ------------------------------------------------------- */
+
+.block {
+  margin-top: 2.25rem;
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h2::before {
+  content: "// ";
+  color: var(--fg-dim);
+}
+
+.job {
+  margin-bottom: 1.75rem;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--fg);
+}
+
+.company .role {
+  color: var(--fg-dim);
+  font-weight: 400;
+}
+
+.dates {
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  margin: 0.15rem 0 0;
+}
+
+.duties {
+  margin-top: 0.6rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule-strong);
+}
+
+.duties p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- skills -------------------------------------------------------------- */
+
+.skills {
+  margin: 0;
+}
+
+.skills > div {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.skills > div:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.skills dt {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.skills dd {
+  margin: 0;
+  color: var(--fg);
+}
+
+@media (max-width: 540px) {
+  .skills > div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+/* --- footer -------------------------------------------------------------- */
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.25rem 0 2.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--fg-dim);
+  font-size: 0.8rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--fg-dim);
+  border-bottom-color: var(--rule);
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+/* --- print / contact ----------------------------------------------------- */
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --fg: #111111;
+    --fg-dim: #444444;
+    --accent: #000000;
+    --accent-dim: #000000;
+    --rule: #cccccc;
+    --rule-strong: #999999;
+  }
+
+  body {
+    padding: 0;
+    font-size: 11pt;
+  }
+
+  .hero,
+  .hero-fallback,
+  nav[aria-label="Primary"],
+  .site-footer {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  .job,
+  .block {
+    page-break-inside: avoid;
+  }
+
+  h2::before,
+  .prompt {
+    color: inherit;
+  }
+}
