@@ -1,10 +1,14 @@
 module.exports = async function (eleventyConfig) {
   const { feedPlugin } = await import("@11ty/eleventy-plugin-rss");
+  const { default: footnote } = await import("markdown-it-footnote");
 
   // Copy static assets straight through to the output.
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+
+  // [^1]-style footnotes, rendered as endnotes at the bottom of a post.
+  eleventyConfig.amendLibrary("md", (md) => md.use(footnote));
 
   // Posts marked `draft: true` render under `npm start` but never ship.
   eleventyConfig.addPreprocessor("drafts", "*", (data) => {

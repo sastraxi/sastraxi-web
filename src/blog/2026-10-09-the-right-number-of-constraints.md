@@ -1,53 +1,54 @@
 ---
 title: The right number of constraints
-description: Knowing when to stop planning and start building comes down to one question — are you under-constrained, over-constrained, or just right?
+description: Every constraint prunes your decision tree. Execute when you have the right number of them.
 ---
 
-One important skill in software development is determining whether you have the right number of constraints. This is not a new concept. I want to take the idea of planning in software development as an example.
+An important skill in software development is determining whether you have the right number of constraints. [This is](https://sookocheff.com/post/architecture/innovation-with-constraints/)[^sookocheff] [not a](https://spin.atomicobject.com/constraints-good-custom-software/)[^kelch] [new idea](https://dev.to/mjodeh/the-hidden-cost-of-starting-development-too-early-1hgj)[^jodeh].
 
-## From planning to action
+Every way of running a project — e.g. waterfall, agile — has moments where we transition from planning to action. Waterfall, the idealized version that has probably never once happened, has exactly one: have we figured it all out? The agile I've seen has them constantly, and they mostly land on the engineering lead, who's planning alongside a designer and a product manager while also executing.
 
-There are all sorts of different ways of managing a software development project — waterfall, agile, Shape Up — but the key thing in all of them is when we decide to transition from planning to action. Waterfall is the idealized version, right? It has probably never once happened. You do all the planning, then you execute to the spec, and you only have one decision point: have we figured it all out?
+A seasoned engineer asks "what's defined enough to start implementing?" constantly. This runs in reverse too: when do we need to stop and go back to planning, because we no longer have confidence we can execute?
 
-The agile I've seen is a continuous planning process between the trifecta of a designer, a product manager, and an engineering lead. It's the classic "building the airplane while we're flying it." The engineering lead is going to be executing as well, so they have a question they have to ask themselves: "Am I ready to start programming something?" It's an undefined spot in this entire process.
+I've been toying with the idea that this confidence is a proxy for the project's constraints. Too few, and you're lost: too much is possible, so nothing is obvious, and I think this is where most projects spend most of their time. With too many constraints, you've hit a wall: the library doesn't quite support your use case, or the blast radius grows until you're putting your hands up and pulling the "scope is blowing up" cord.
 
-How do they decide this? When do we decide that we should stop executing and go back to planning, because something has gone wrong or we no longer have confidence in our plan?
-
-## Confidence is a proxy for constraints
-
-My pitch — or at least the way I've been thinking about this lately — is that confidence is a proxy for your constraints. If you hit a massive blocker, you know that you are over-constrained, and you need to stop and think about things. On the other hand, there's being under-constrained, and I think this is where most projects live. The decision a developer has as they develop something is whether they are under-constrained, over-constrained, or perfectly well-constrained.
-
-## The stream in the middle
-
-There's kind of a stream in the middle of this that's probably different for every single implementer. If you're not inside of that comfort zone — if we're over-constrained — we can't get anything done. We don't have a server to run it on. We haven't gotten a security audit back, and we can't proceed with the rest of the project. Infrastructure hasn't been provisioned. Anything can come up: the library we were using doesn't quite support our use case, or the code we're adding is increasing the blast radius to the point where we have to put our hands up and say, "Oh my God, the scope is blowing up, and we no longer think we'll be able to get it done in time." In every case, your actual development of the software is constrained by the context you're developing it in.
+Somewhere in the middle there's a space of low turbulence where execution feels close to effortless.
 
 ## Under-thinking, over-thinking
 
-One of the best developers I've worked with put it this way: "I'm just trying to prune my decision tree to get to the right one." That's how he thinks about constraints. He knows it's bullshit to try to brute-force the answer.
+One of the best developers I've worked with put it this way: "I'm just trying to prune my decision tree to get to the right one." He knows it's bullshit to try to brute-force the answer.
 
-I think every programmer has felt this: they get impatient, they just start programming, and they realize they underthought the architecture. Now granted, I think the opposite is usually more true — that they've overthought their architecture — but that's just the pendulum swing of correction, right? You start by not understanding, then you go "Oh my God, everything's so complicated," and then you try to create a complicated solution. What we're really all trying to do is create the simplest possible solution that's maintainable.
+I think every programmer has experienced this: impatient, you just start programming, realizing later you underthought the architecture. Granted, I think the opposite is usually more true — that we _overthink_ our architectures — but that's just the pendulum swing of correction, right? At the start of a project or learning endeavour, you start by not understanding, then pass through the cloud of "everything's so complicated! The solution must be as well!"
 
-## "I think I see it now"
-
-At the start of a project, you might be completely under-constrained, because you don't know exactly what you're trying to do — and obviously you don't start developing right at the start of the project. As you define things, conversing with the product manager and the designer, there's a point where you think, "Oh my God, I think I see it now."
-
-It's at that point that you've found all the constraints you need to actually build the application. You have enough confidence in the code you're putting in, enough understanding of the codebase, and enough understanding of the project. That's where you have the right number of constraints, and that's where you go.
+Ultimately, what we're all trying to do is create the simplest possible solution that's maintainable. That solution is a lot easier to arrive at when you've spent the right amount of time narrowing down the solution space.
 
 ## Constraints prune the decision tree
 
-Every constraint cuts branches off the tree. A security audit "speed-bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? How likely is that path to lead us to an eventual "leaf" that fits our specifications?
+Every constraint cuts branches off the tree (closes off parts of the solution space). A security audit "speed-bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? Which branches do you suspect will ultimately be fruitless? How likely is each path to lead you to an eventual "leaf" that fits your specifications?
 
 Some of those are objective truths about the solution space. Others represent someone's will: a deadline chosen because it sounded right, a requirement nobody can trace back to a user, a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
 
-Let's take the example of building on top of a third party service. Choosing the provider ahead of time prunes a ton of the tree, but there's a large risk that it will end up _over-constraining_ you. This is one use case for a proof-of-concept implementation: you might have chosen to prune the whole branch of using that provider with a bit more knowledge of what's there. 
-
+When you're under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's [appetite](https://basecamp.com/shapeup/1.2-chapter-03#setting-the-appetite) gives you that, as does the number of hours in a day. Maybe there's a prior art to look at, or development principles to adhere to.
 
 ## Constraints are a gift
 
-Under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's appetite gives you that, as do the number of hours in a day. Upstream providers are massive constraints: companies choose to go all-in on a Cloud Platform so there's a "golden path" to a particular implementation: we can prune the tree immediately, and without much fuss.
+Take a third-party provider. Choosing one up front prunes a huge part of the tree, and that's exactly why companies go all-in on a cloud platform: there's a golden path, and most of the decisions are already made. But the same choice can turn into a wall the moment the provider doesn't quite support what you need. Same constraint, different moment. This is what a proof-of-concept is for: a bit of knowledge up front tells you whether you're pruning toward a leaf or toward a dead end.
 
-## The same skill, somewhere else
+If it's a dead end, congratulations: you just pruned a branch.
 
-I believe prompting an LLM is a similar endeavour: you're navigating a space by pruning branches. The model is trying to rationalize the world based on what you've told it, so if you argue with it for three or four messages before deciding the code was fine after all, that detour is still part of its world. It would be like reading a textbook that did that. When you over-constrain a project, you pull the cord and say, "Hey, something's wrong." If you over-constrain an LLM, you can go back to before it got constrained in that way.
+## Aside: Parametric memory as a space
 
-Go looking for constraints: in the code, on the calendar, in the room. Challenge the ones that are only someone's will. The rest you'll meet either way.
+Prompting an LLM can feel like a similar endeavour. A conversation navigates its learned knowledge space, pruning branches every time you send a message.
+
+The model is trying to rationalize the world based on what you've told it, so if you argue with it for three or four messages before deciding "that code was fine after all", that detour is still part of its world (imagine a textbook that argued with itself for three pages, then said "never mind!").
+
+The fix for LLMs is to rewind the conversation: go back to before the bad constraint went in, and navigate again from there. In the real world, undoing decisions is much more costly and friction-filled.
+
+## The slipstream
+
+Some time after a project kicks off, there's a moment where you think, "I see it now." You've found the constraints you need: clarity on the user journeys you need to support, a forgotten spike document from years before, the limits of the technologies you've chosen, the relevant sharp edges of your existing codebase are known, and the business context is stable. That's the right number of constraints.
+
+If you find yourself stuck during a project, make a practice of checking in. If you're lost, go find more constraints. If you've hit a wall, find out whose it is.
+
+[^sookocheff]: Kevin Sookocheff, [Innovation with Constraints](https://sookocheff.com/post/architecture/innovation-with-constraints/), 2019.
+[^kelch]: Dan Kelch, [Constraints Are Necessary When Building Custom Software](https://spin.atomicobject.com/constraints-good-custom-software/), Atomic Object, 2021.
+[^jodeh]: Mohammad Jodeh, [The Hidden Cost of Starting Development Too Early](https://dev.to/mjodeh/the-hidden-cost-of-starting-development-too-early-1hgj), DEV Community.
