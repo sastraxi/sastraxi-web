@@ -17,27 +17,27 @@ Somewhere in the middle there's a space of low turbulence where execution feels 
 
 One of the best developers I've worked with put it this way: "I'm just trying to prune my decision tree to get to the right one." He knows it's bullshit to try to brute-force the answer.
 
-I think every programmer has experienced this: impatient, you just start programming, realizing later you underthought the architecture. Granted, I think the opposite is usually more true — that we _overthink_ our architectures — but that's just the pendulum swing of correction, right? At the start of a project or learning endeavour, you start by not understanding, then pass through the cloud of "everything's so complicated! The solution must be as well!"
+I think every programmer has experienced this: impatient, they just start programming, only to realize later that they underthought the architecture. Granted, I think the opposite is usually more true — that we _overthink_ our architectures — but that's just the pendulum swing of correction, right? A developer new to a project or a technology begins by not understanding it, then passes through the cloud of "everything's so complicated! The solution must be as well!"
 
 Ultimately, what we're all trying to do is create the simplest possible solution that's maintainable. That solution is a lot easier to arrive at when you've spent the right amount of time narrowing down the solution space.
 
 ## Constraints prune the decision tree
 
-Every constraint cuts branches off the tree (closes off parts of the solution space). A security audit "speed-bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? Which branches do you suspect will ultimately be fruitless? How likely is each path to lead you to an eventual "leaf" that fits your specifications?
+Every constraint cuts branches off the tree (closes off parts of the solution space). A security audit "speed bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? Which branches do you suspect will ultimately be fruitless? How likely is each path to lead you to an eventual "leaf" that fits your specifications?
 
 Some of those are objective truths about the solution space. Others represent someone's will: a deadline chosen because it sounded right, a requirement nobody can trace back to a user, a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
 
-When you're under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's [appetite](https://basecamp.com/shapeup/1.2-chapter-03#setting-the-appetite) gives you that, as does the number of hours in a day. Maybe there's a prior art to look at, or development principles to adhere to.
+When you're under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's [appetite](https://basecamp.com/shapeup/1.2-chapter-03#setting-the-appetite) gives you that, as does the number of hours in a day. Maybe there's prior art to look at, or development principles to adhere to.
 
 ## Constraints are a gift
 
-Take a third-party provider. Choosing one up front prunes a huge part of the tree, and that's exactly why companies go all-in on a cloud platform: there's a golden path, and most of the decisions are already made. But the same choice can turn into a wall the moment the provider doesn't quite support what you need. Same constraint, different moment. This is what a proof-of-concept is for: a bit of knowledge up front tells you whether you're pruning toward a leaf or toward a dead end.
+Take a third-party provider. Choosing one up front prunes a huge part of the tree, and that's exactly why companies go all-in on a cloud platform: there's a golden path, and most of the decisions are already made. But the same choice can turn into a wall the moment the provider doesn't quite support what you need. Same constraint, different moment. This is what a proof of concept is for: a bit of knowledge up front tells you whether you're pruning toward a leaf or toward a dead end.
 
 If it's a dead end, congratulations: you just pruned a branch.
 
 ## Aside: Parametric memory as a space
 
-Prompting an LLM can feel like a similar endeavour. A conversation navigates its learned knowledge space, pruning branches every time you send a message.
+Prompting an LLM can feel like a similar endeavour. A conversation navigates the model's learned knowledge space, pruning branches every time you send a message.
 
 The model is trying to rationalize the world based on what you've told it, so if you argue with it for three or four messages before deciding "that code was fine after all", that detour is still part of its world (imagine a textbook that argued with itself for three pages, then said "never mind!").
 
@@ -45,9 +45,9 @@ The fix for LLMs is to rewind the conversation: go back to before the bad constr
 
 ## The slipstream
 
-Some time after a project kicks off, there's a moment where you think, "I see it now." You've found the constraints you need: clarity on the user journeys you need to support, a forgotten spike document from years before, the limits of the technologies you've chosen, the relevant sharp edges of your existing codebase are known, and the business context is stable. That's the right number of constraints.
+Some time after a project kicks off, there's a moment where you think, "I see it now." You've found the constraints you need: clarity on the user journeys you need to support, a forgotten spike document from years before, the limits of the technologies you've chosen, the relevant sharp edges of your existing codebase, and a stable business context. That's the right number of constraints, and the right time to start developing.
 
-If you find yourself stuck during a project, make a practice of checking in. If you're lost, go find more constraints. If you've hit a wall, find out whose it is.
+Make a practice of checking in during execution. If you're lost, go find more constraints. If you've hit a wall, find out whose it is.
 
 [^sookocheff]: Kevin Sookocheff, [Innovation with Constraints](https://sookocheff.com/post/architecture/innovation-with-constraints/), 2019.
 [^kelch]: Dan Kelch, [Constraints Are Necessary When Building Custom Software](https://spin.atomicobject.com/constraints-good-custom-software/), Atomic Object, 2021.
