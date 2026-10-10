@@ -701,9 +701,16 @@ h2::before {
   content: "ASIDE: ";
 }
 
+/* Phones: bleed to the screen edges (cancelling the body's 1.25rem gutter),
+   keep only top/bottom rules, and line the text up with the body text. */
 @media (max-width: 540px) {
   .prose aside {
-    --aside-pad: 1.1rem;
+    --aside-pad: 1.25rem;
+    max-width: none;
+    margin-left: calc(-1 * var(--aside-pad));
+    margin-right: calc(-1 * var(--aside-pad));
+    border-left: none;
+    border-right: none;
   }
 }
 

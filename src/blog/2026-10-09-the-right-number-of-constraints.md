@@ -41,7 +41,7 @@ If it's a dead end, congratulations: you just pruned a branch.
 
 Prompting an LLM feels similar to me: a conversation navigates the model's learned knowledge space, pruning branches every time you send a message.
 
-The model is trying to rationalize the world based on what you've told it, so if you argue with it for three or four messages before deciding "that code was fine after all", that detour is still part of its world (imagine a textbook that argued with itself for three pages, then said "never mind!").
+The model is trying to rationalize the world based on what we tell it, so if we argue with it for three or four messages before deciding "that code was fine after all", that detour is still part of its world (imagine a textbook that argued with itself for three pages, then said "never mind!"). Models may attempt to "connect dots" that should not be connected.
 
 The fix for LLMs is to rewind the conversation: go back to before the bad constraint went in, and navigate again from there. In the real world, undoing decisions is much more costly and full of friction.
 
