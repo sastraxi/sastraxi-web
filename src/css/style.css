@@ -18,6 +18,7 @@
     Consolas, "Liberation Mono", monospace;
   --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --measure: 72ch;
+  --prose-measure: 39.6rem; /* ~75 characters of serif at 1.1rem */
 }
 
 @media (prefers-color-scheme: light) {
@@ -239,7 +240,7 @@ main :where(p, li):not(.cmd, .dates, .post-meta, .crumbs, .subscribe, .empty, .p
   font-size: 1.1rem;
   color: color-mix(in srgb, var(--fg) 70%, var(--fg-dim));
   line-height: 1.65;
-  max-width: 36em; /* ~75 characters of serif */
+  max-width: var(--prose-measure);
 }
 
 .lede {
@@ -671,6 +672,39 @@ h2::before {
   color: var(--accent);
   font-weight: 600;
   border-bottom-color: var(--rule-strong);
+}
+
+/* Asides: a tangent set apart in a tinted, square 1px box. Write
+   <aside> … </aside> around markdown, with blank lines inside.
+   The box sits inside the prose measure; its text is inset by the padding. */
+.prose aside {
+  --aside-pad: 1.75rem;
+  max-width: var(--prose-measure);
+  margin: 2.5rem 0;
+  padding: 1.5rem var(--aside-pad) 0.4rem;
+  background: color-mix(in srgb, var(--bg) 93%, var(--accent));
+  border: 1px solid color-mix(in srgb, var(--rule-strong) 60%, var(--accent));
+}
+
+.prose aside h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.prose aside p,
+.prose aside li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.prose aside h2::before {
+  content: "ASIDE: ";
+}
+
+@media (max-width: 540px) {
+  .prose aside {
+    --aside-pad: 1.1rem;
+  }
 }
 
 /* Footnotes (markdown-it-footnote). The separator <hr> gets the usual "* * *". */
