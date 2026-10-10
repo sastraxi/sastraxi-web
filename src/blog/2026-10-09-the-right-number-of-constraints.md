@@ -5,9 +5,9 @@ description: Every constraint prunes your decision tree. Execute when you have t
 
 An important skill in software development is determining whether you have the right number of constraints. [This is](https://sookocheff.com/post/architecture/innovation-with-constraints/)[^sookocheff] [not a](https://spin.atomicobject.com/constraints-good-custom-software/)[^kelch] [new idea](https://dev.to/mjodeh/the-hidden-cost-of-starting-development-too-early-1hgj)[^jodeh].
 
-Every way of running a project — e.g. waterfall, agile — has moments where we transition from planning to action. Waterfall, the idealized version that has probably never once happened, has exactly one: have we figured it all out? The agile I've seen has them constantly, and they mostly land on the engineering lead, who's planning alongside a designer and a product manager while also executing.
+Every way of running a project — e.g. waterfall, agile — has moments where we transition from planning to action. Waterfall, the idealized version that has probably never once happened, has exactly one decision point: have we figured _everything_ out? The "agile" pratcies I've seen are much more haphazard with these moments, determined by the engineering lead who is planning alongside a designer and a product manager while also executing.
 
-A seasoned engineer asks "what's defined enough to start implementing?" constantly. This runs in reverse too: when do we need to stop and go back to planning, because we no longer have confidence we can execute?
+A seasoned engineer asks "what's defined enough to implement?" constantly. This runs in reverse too: when do we need to stop and go back to planning, because we no longer have confidence we can execute?
 
 I've been toying with the idea that this confidence is a proxy for the project's constraints. Too few, and you're lost: too much is possible, so nothing is obvious, and I think this is where most projects spend most of their time. With too many constraints, you've hit a wall: the library doesn't quite support your use case, or the blast radius grows until you're putting your hands up and pulling the "scope is blowing up" cord.
 
