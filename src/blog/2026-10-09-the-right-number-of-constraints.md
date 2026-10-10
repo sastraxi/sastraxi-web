@@ -25,7 +25,7 @@ Ultimately, what we're all trying to do is create the simplest possible solution
 
 Every constraint cuts branches off the tree (closes off parts of the solution space). A security audit "speed bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? Which branches do you suspect will ultimately be fruitless? How likely is each path to lead you to an eventual "leaf" that fits your specifications?
 
-Some of those are objective truths about the solution space. Others represent someone's will: a deadline chosen because it sounded right, a requirement nobody can trace back to a user, a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
+Some of those are objective truths about the solution space. Others represent someone's will: a deadline chosen politically, an invented user story, or a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
 
 When you're under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's [appetite](https://basecamp.com/shapeup/1.2-chapter-03#setting-the-appetite) gives you that, as does the number of hours in a day. Maybe there's prior art to look at, or development principles to adhere to.
 
