@@ -357,6 +357,12 @@ h2::before {
   border-top: 1px solid var(--rule);
 }
 
+/* The section heading above already draws the top rule. */
+.post-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
 .post-list li:last-child {
   border-bottom: 1px solid var(--rule);
 }
