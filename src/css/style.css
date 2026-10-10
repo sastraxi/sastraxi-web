@@ -16,6 +16,7 @@
 
   --mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", "SF Mono", Menlo,
     Consolas, "Liberation Mono", monospace;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --measure: 72ch;
 }
 
@@ -81,6 +82,7 @@ b {
 }
 
 .prompt {
+  font-family: var(--mono);
   color: var(--accent);
   font-weight: 600;
 }
@@ -230,6 +232,15 @@ p {
   margin: 0 0 1.1rem;
 }
 
+/* Prose everywhere is proportional and slightly dimmed. Headings, titles,
+   dates, and list/meta chrome stay mono. */
+main :where(p, li):not(.cmd, .dates, .post-meta, .crumbs, .subscribe, .empty, .post-list li) {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--fg) 70%, var(--fg-dim));
+  line-height: 1.65;
+}
+
 .lede {
   font-size: 1.05rem;
   border-left: 1px solid var(--accent-dim);
@@ -251,7 +262,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--accent);
+  color: var(--fg);
   margin: 0 0 1.25rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--rule);
@@ -371,10 +382,10 @@ h2::before {
   color: var(--accent);
 }
 
-.post-desc {
+.post-list .post-desc {
   margin: 0.2rem 0 0;
-  color: var(--fg-dim);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .draft-badge {
@@ -417,6 +428,11 @@ h2::before {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
+}
+
+.ed-note p {
+  color: inherit;
+  font-size: inherit;
 }
 
 .ed-note p:last-child {
@@ -502,7 +518,9 @@ span.ed-new {
 
 .post-header .lede {
   margin: 1.25rem 0 0;
-  color: var(--fg);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.55;
 }
 
 /* Markdown body. Headings show their markdown sigil, dimmed. */
@@ -585,6 +603,10 @@ span.ed-new {
   padding: 0.1rem 0 0.1rem 1rem;
   border-left: 1px solid var(--accent-dim);
   color: var(--fg-dim);
+}
+
+.prose blockquote p {
+  color: inherit;
 }
 
 .prose blockquote p:last-child {

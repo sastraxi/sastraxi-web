@@ -4,7 +4,8 @@ layout: base.njk
 <article class="post">
   <header class="post-header">
     <p class="crumbs">
-      <span class="prompt">$</span> cat <a href="/blog/">~/blog</a>/{{ page.fileSlug }}.md
+      {% set postNumber = (collections.posts | getCollectionItemIndex(page)) + 1 %}
+      <span class="prompt">$</span> cat <a href="/blog/">~/blog</a>/{{ postNumber | zeroPad(3) }}.md
     </p>
     <h1 class="post-title">{{ title }}</h1>
     <p class="post-meta">

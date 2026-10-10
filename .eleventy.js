@@ -20,6 +20,7 @@ module.exports = async function (eleventyConfig) {
     `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`);
   eleventyConfig.addFilter("newestFirst", (items) => [...items].reverse());
   eleventyConfig.addFilter("head", (items, n) => items.slice(0, n));
+  eleventyConfig.addFilter("zeroPad", (n, width) => String(n).padStart(width, "0"));
   eleventyConfig.addFilter("readingTime", (html) => {
     const words = String(html).replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
     return Math.max(1, Math.round(words / 230));
