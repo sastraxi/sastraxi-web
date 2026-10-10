@@ -1,0 +1,41 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="post-header">
+    <p class="crumbs">
+      <span class="prompt">$</span> cat <a href="/blog/">~/blog</a>/{{ page.fileSlug }}.md
+    </p>
+    <h1 class="post-title">{{ title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      &middot; {{ content | readingTime }} min read
+      {% if draft %}&middot; <span class="draft-badge">draft</span>{% endif %}
+    </p>
+    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {% set newer = collections.posts | getNextCollectionItem(page) %}
+  {% set older = collections.posts | getPreviousCollectionItem(page) %}
+  <nav class="post-nav" aria-label="More posts">
+    <div>
+      {% if older %}
+        <span class="post-nav-label">&larr; older</span>
+        <a href="{{ older.url }}">{{ older.data.title }}</a>
+      {% endif %}
+    </div>
+    <div class="post-nav-newer">
+      {% if newer %}
+        <span class="post-nav-label">newer &rarr;</span>
+        <a href="{{ newer.url }}">{{ newer.data.title }}</a>
+      {% else %}
+        <span class="post-nav-label">all posts</span>
+        <a href="/blog/">~/blog</a>
+      {% endif %}
+    </div>
+  </nav>
+</article>

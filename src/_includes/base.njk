@@ -3,25 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }}</title>
+    <title>{{ docTitle or title }}</title>
     <meta name="description" content="{{ description or 'Cameron Gorrie — software architect, musician, leader, advocate' }}" />
     <meta name="author" content="Cameron Gorrie" />
     <link rel="icon" href="/images/icon.png" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="alternate" type="application/atom+xml" href="/blog/feed.xml" title="Cameron Gorrie — blog" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="masthead">
+    <header class="masthead{% if compactHeader %} masthead--compact{% endif %}">
+      {% if not compactHeader %}
       <canvas id="hero" class="hero" aria-hidden="true" width="900" height="160"></canvas>
       <pre class="hero-fallback" aria-hidden="true">{% include "hero-banner.njk" %}</pre>
+      {% endif %}
 
       <div class="identity">
+        {% if compactHeader %}
+        <p class="site-name"><a href="/">Cameron Gorrie</a></p>
+        {% else %}
         <h1>Cameron Gorrie</h1>
-        <p class="tagline">software architect, musician, leader, advocate</p>
+        <p class="tagline">human, developer, musician, advocate</p>
+        {% endif %}
         <nav aria-label="Primary">
           {% for link in nav %}
-            <a href="{{ link.href }}"{% if link.external %} rel="noopener"{% endif %}>{{ link.label }}</a>
+            {% set current = (link.href == "/" and page.url == "/") or (link.href != "/" and not link.external and page.url.startsWith(link.href)) %}
+            <a href="{{ link.href }}"{% if link.external %} rel="noopener"{% endif %}{% if current %} aria-current="page"{% endif %}>{{ link.label }}</a>
           {% endfor %}
         </nav>
       </div>
@@ -35,7 +43,7 @@
       <p>
         <span class="prompt">$</span> built with
         <a href="https://www.11ty.dev/" rel="noopener">eleventy</a> &middot;
-        no trackers &middot; <a href="/resume/">resume</a> &middot;
+        no trackers &middot; <a href="/blog/feed.xml">rss</a> &middot;
         <a href="https://github.com/sastraxi/sastraxi-web" rel="noopener">source</a>
       </p>
     </footer>

@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Cameron Gorrie — Blog
+description: Writing by Cameron Gorrie on software, music, and whatever else.
+permalink: /blog/
+---
+<section class="block">
+  <h2>Writing</h2>
+
+  {% set posts = collections.posts | newestFirst %}
+  {% if posts.length %}
+    {% include "post-list.njk" %}
+  {% else %}
+    <p class="empty"><span class="prompt">$</span> ls ~/blog<br>total 0<span class="cursor" aria-hidden="true"></span></p>
+  {% endif %}
+
+  <p class="subscribe">
+    <span class="prompt">&gt;</span> subscribe: <a href="/blog/feed.xml">feed.xml</a>
+  </p>
+</section>

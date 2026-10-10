@@ -1,0 +1,8 @@
+[
+  { "label": "Home", "href": "/" },
+  { "label": "Blog", "href": "/blog/" },
+  { "label": "Resume", "href": "/resume/" },
+  { "label": "Email", "href": "mailto:sastraxi+weblinks@gmail.com", "external": true },
+  { "label": "GitHub", "href": "https://github.com/sastraxi", "external": true },
+  { "label": "LinkedIn", "href": "https://www.linkedin.com/in/camerongorrie/", "external": true }
+]

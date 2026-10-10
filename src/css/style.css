@@ -189,7 +189,34 @@ nav[aria-label="Primary"] a::before {
   color: var(--accent);
 }
 
-nav[aria-label="Primary"] a:hover {
+nav[aria-label="Primary"] a:hover,
+nav[aria-label="Primary"] a[aria-current="page"] {
+  color: var(--accent);
+}
+
+/* Post pages trade the hero for a one-line masthead so the title leads. */
+.masthead--compact .identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+  border-top: none;
+  padding-top: 0;
+}
+
+.site-name {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.site-name a {
+  color: var(--fg);
+  border-bottom: none;
+}
+
+.site-name a:hover {
   color: var(--accent);
 }
 
@@ -303,6 +330,370 @@ h2::before {
   }
 }
 
+/* --- blog: lists -------------------------------------------------------- */
+
+.post-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.post-list li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.post-list li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-date {
+  color: var(--fg-dim);
+  font-size: 0.85rem;
+  padding-top: 0.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-link {
+  color: var(--fg);
+  border-bottom-color: transparent;
+  font-weight: 600;
+}
+
+.post-link:visited {
+  color: var(--fg);
+}
+
+.post-link:hover {
+  color: var(--accent);
+}
+
+.post-desc {
+  margin: 0.2rem 0 0;
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+}
+
+.draft-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.4em 0.45em 0.4em 0.57em; /* extra left offsets trailing letter-spacing */
+  border: 1px dashed var(--fg-dim);
+  border-radius: 4px;
+  color: var(--fg-dim);
+  font-size: 0.7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  vertical-align: 0.1em;
+  /* All caps: trim the line box to cap height so there's no descender gap. */
+  text-box: trim-both cap alphabetic;
+}
+
+@supports not (text-box: trim-both cap alphabetic) {
+  .draft-badge {
+    padding-top: 0.3em;
+    padding-bottom: 0.15em;
+  }
+}
+
+/* Editorial notes inside draft posts — remove before publishing. */
+.ed-note {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px dashed var(--fg-dim);
+  border-radius: 4px;
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+}
+
+.ed-note::before {
+  content: "editor's note";
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.ed-note p:last-child {
+  margin-bottom: 0;
+}
+
+.post-meta .draft-badge {
+  margin-left: 0;
+}
+
+.empty {
+  color: var(--fg-dim);
+}
+
+.cursor::after {
+  content: "▍";
+  color: var(--accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor::after {
+    animation: none;
+  }
+}
+
+.subscribe {
+  color: var(--fg-dim);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 540px) {
+  .post-list li {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+/* --- blog: post ---------------------------------------------------------- */
+
+.post-header {
+  margin-bottom: 2.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.crumbs {
+  color: var(--fg-dim);
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 0.6rem;
+  text-wrap: balance;
+}
+
+.post-meta {
+  color: var(--fg-dim);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.post-header .lede {
+  margin: 1.25rem 0 0;
+  color: var(--fg);
+}
+
+/* Markdown body. Headings show their markdown sigil, dimmed. */
+.prose {
+  overflow-wrap: break-word;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--fg);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.35;
+  border-bottom: none;
+  padding: 0;
+  margin: 2.5rem 0 0.9rem;
+  text-wrap: balance;
+}
+
+.prose h2 {
+  font-size: 1.2rem;
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  margin-top: 2rem;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  color: var(--fg-dim);
+}
+
+.prose h2::before,
+.prose h3::before,
+.prose h4::before {
+  color: var(--accent-dim);
+  font-weight: 400;
+}
+
+.prose h2::before { content: "## "; }
+.prose h3::before { content: "### "; }
+.prose h4::before { content: "#### "; }
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.prose ul {
+  list-style: none;
+}
+
+.prose ul > li::before {
+  content: "-";
+  color: var(--accent);
+  display: inline-block;
+  width: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+.prose ol > li::marker {
+  color: var(--accent);
+}
+
+.prose li {
+  margin-bottom: 0.35rem;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin: 0.35rem 0 0;
+}
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border-left: 1px solid var(--accent-dim);
+  color: var(--fg-dim);
+}
+
+.prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  padding: 0.05em 0.3em;
+}
+
+.prose pre {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule-strong);
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.prose img,
+.prose video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.75rem auto;
+  border: 1px solid var(--rule);
+}
+
+.prose figure {
+  margin: 1.75rem 0;
+}
+
+.prose figure img {
+  margin: 0 auto 0.5rem;
+}
+
+.prose figcaption {
+  color: var(--fg-dim);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.prose hr {
+  border: none;
+  margin: 2.5rem 0;
+  text-align: center;
+  color: var(--fg-dim);
+}
+
+.prose hr::after {
+  content: "* * *";
+  letter-spacing: 0.5em;
+}
+
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 0.4rem 0.9rem 0.4rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.prose th {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom-color: var(--rule-strong);
+}
+
+.post-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.9rem;
+}
+
+.post-nav-newer {
+  text-align: right;
+}
+
+.post-nav-label {
+  display: block;
+  color: var(--fg-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 540px) {
+  .post-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .post-nav-newer {
+    text-align: left;
+  }
+}
+
 /* --- footer -------------------------------------------------------------- */
 
 .site-footer {
@@ -351,6 +742,8 @@ h2::before {
   .hero,
   .hero-fallback,
   nav[aria-label="Primary"],
+  .crumbs,
+  .post-nav,
   .site-footer {
     display: none;
   }
@@ -366,6 +759,10 @@ h2::before {
   .job,
   .block {
     page-break-inside: avoid;
+  }
+
+  .prose pre {
+    white-space: pre-wrap;
   }
 
   h2::before,

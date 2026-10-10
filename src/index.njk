@@ -2,12 +2,6 @@
 layout: base.njk
 title: Cameron Gorrie
 description: Cameron Gorrie — software architect, musician, leader, advocate
-nav:
-  - { label: "Home", href: "/" }
-  - { label: "Resume", href: "/resume/" }
-  - { label: "Email", href: "mailto:sastraxi+weblinks@gmail.com", external: true }
-  - { label: "GitHub", href: "https://github.com/sastraxi", external: true }
-  - { label: "LinkedIn", href: "https://www.linkedin.com/in/camerongorrie/", external: true }
 ---
 <section class="block">
   <p class="lede" style="font-style: italic; padding: 0 2rem; max-width: 27rem; margin-left: auto; margin-right: auto">
@@ -23,13 +17,13 @@ nav:
     <a href="https://www.snowflake.com/en/" rel="noopener">Snowflake</a>
     and co-founder of
     <a href="https://trillertv.com/" rel="noopener">Robin&nbsp;Media</a>&nbsp;(acq.).
+    I like tinkering with electronics, running, strengthening exercises, racquet
+    sports and riding my bike.
   </p>
-
   <p>
-    I play in a band called <a href="https://parallelcreak.com/">Parallel Creak</a>.
-    I like to go running, play squash, and ride my bike. If you want to know more about
-    me, you should probably just ask. Or continue to develop a parasocial relationship;
-    you do you!
+    I love meeting new people;
+    <a href="mailto:sastraxi+getintouch@gmail.com">get in touch</a> if you're ever in Toronto
+    and we have common interests.
   </p>
 </section>
 <br>
@@ -37,7 +31,7 @@ nav:
   <h2>What am I up to?</h2>
 
   <p>
-    Gigging and building music software.
+    Writing music, building 
   </p>
 
   <p>
@@ -58,3 +52,12 @@ nav:
 
 
 </section>
+{% set posts = collections.posts | newestFirst | head(3) %}
+{% if posts.length %}
+<br>
+<section>
+  <h2>Recent writing</h2>
+  {% include "post-list.njk" %}
+  <p><span class="prompt">&gt;</span> <a href="/blog/">all posts</a></p>
+</section>
+{% endif %}

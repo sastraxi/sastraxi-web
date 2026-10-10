@@ -1,0 +1,13 @@
+{# Expects `posts` (newest first). #}
+<ol class="post-list">
+  {% for post in posts %}
+    <li>
+      <time class="post-date" datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
+      <div>
+        <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
+        {% if post.data.draft %}<span class="draft-badge">draft</span>{% endif %}
+        {% if post.data.description %}<p class="post-desc">{{ post.data.description }}</p>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
