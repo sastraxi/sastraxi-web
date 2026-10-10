@@ -1,14 +1,7 @@
 ---
 title: The right number of constraints
 description: Knowing when to stop planning and start building comes down to one question — are you under-constrained, over-constrained, or just right?
-draft: true
 ---
-
-<div class="ed-note">
-
-Dashed left border = Claude's words. Remove before publishing.
-
-</div>
 
 One important skill in software development is determining whether you have the right number of constraints. This is not a new concept. I want to take the idea of planning in software development as an example.
 
@@ -28,7 +21,7 @@ My pitch — or at least the way I've been thinking about this lately — is tha
 
 There's kind of a stream in the middle of this that's probably different for every single implementer. If you're not inside of that comfort zone — if we're over-constrained — we can't get anything done. We don't have a server to run it on. We haven't gotten a security audit back, and we can't proceed with the rest of the project. Infrastructure hasn't been provisioned. Anything can come up: the library we were using doesn't quite support our use case, or the code we're adding is increasing the blast radius to the point where we have to put our hands up and say, "Oh my God, the scope is blowing up, and we no longer think we'll be able to get it done in time." In every case, your actual development of the software is constrained by the context you're developing it in.
 
-## Brute force?
+## Under-thinking, over-thinking
 
 One of the best developers I've worked with put it this way: "I'm just trying to prune my decision tree to get to the right one." That's how he thinks about constraints. He knows it's bullshit to try to brute-force the answer.
 
@@ -40,26 +33,21 @@ At the start of a project, you might be completely under-constrained, because yo
 
 It's at that point that you've found all the constraints you need to actually build the application. You have enough confidence in the code you're putting in, enough understanding of the codebase, and enough understanding of the project. That's where you have the right number of constraints, and that's where you go.
 
-<div class="ed-new">
+## Constraints prune the decision tree
 
-## Constraints prune the tree
+Every constraint cuts branches off the tree. A security audit "speed-bump", missing infrastructure, a teammate still wrapping up another project. What can you do _now_ with what you've got? How likely is that path to lead us to an eventual "leaf" that fits our specifications?
 
-Every constraint cuts branches off the tree, and not all of them are technical. A security audit, an unprovisioned server, and a library that doesn't fit sit on the same list as the hours in a day, the people you can get into a room this week, and the appetite we set for a phase: Shape Up's word for how much time we're willing to spend.
+Some of those are objective truths about the solution space. Others represent someone's will: a deadline chosen because it sounded right, a requirement nobody can trace back to a user, a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
 
-Some of those are facts. Others represent someone's will: a deadline chosen because it sounded right, a requirement nobody can trace back to a user, a "we don't do it that way here." They prune just as hard, but they can be challenged. When you hit a wall, find out which kind it is before you accept it.
+Let's take the example of building on top of a third party service. Choosing the provider ahead of time prunes a ton of the tree, but there's a large risk that it will end up _over-constraining_ you. This is one use case for a proof-of-concept implementation: you might have chosen to prune the whole branch of using that provider with a bit more knowledge of what's there. 
 
-## A constraint is a gift
 
-Under-constrained, you don't need more information so much as fewer options. An appetite gives you that. "Build the best version of this" becomes "build the best version of this in six weeks," and most of the tree falls away. The hours in a day do the same: you can't try everything, so you have to choose.
+## Constraints are a gift
 
-</div>
+Under-constrained, you don't need _more_ information so much as _fewer options_. Shape Up's appetite gives you that, as do the number of hours in a day. Upstream providers are massive constraints: companies choose to go all-in on a Cloud Platform so there's a "golden path" to a particular implementation: we can prune the tree immediately, and without much fuss.
 
 ## The same skill, somewhere else
 
 I believe prompting an LLM is a similar endeavour: you're navigating a space by pruning branches. The model is trying to rationalize the world based on what you've told it, so if you argue with it for three or four messages before deciding the code was fine after all, that detour is still part of its world. It would be like reading a textbook that did that. When you over-constrain a project, you pull the cord and say, "Hey, something's wrong." If you over-constrain an LLM, you can go back to before it got constrained in that way.
 
-<div class="ed-new">
-
 Go looking for constraints: in the code, on the calendar, in the room. Challenge the ones that are only someone's will. The rest you'll meet either way.
-
-</div>

@@ -427,46 +427,6 @@ h2::before {
   }
 }
 
-/* Editorial notes inside draft posts — remove before publishing. */
-.ed-note {
-  margin: 1.5rem 0;
-  padding: 0.75rem 1rem;
-  border: 1px dashed var(--fg-dim);
-  border-radius: 4px;
-  color: var(--fg-dim);
-  font-size: 0.9rem;
-}
-
-.ed-note::before {
-  content: "editor's note";
-  display: block;
-  margin-bottom: 0.4rem;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-
-.ed-note p {
-  color: inherit;
-  font-size: inherit;
-}
-
-.ed-note p:last-child {
-  margin-bottom: 0;
-}
-
-/* Draft-only: marks text Claude wrote, as opposed to dictation. */
-div.ed-new {
-  margin-left: -1rem;
-  padding-left: calc(1rem - 1px);
-  border-left: 1px dashed var(--fg-dim);
-}
-
-span.ed-new {
-  text-decoration: underline dashed var(--fg-dim);
-  text-underline-offset: 0.25em;
-}
-
 .post-meta .draft-badge {
   margin-left: 0;
 }
